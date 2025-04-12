@@ -25,6 +25,7 @@ h3{
 }
 
 /* Start : Pulsanti */
+
 .sistema_linfatcio{
     width: 200px;
     height: 150px;
@@ -72,7 +73,7 @@ display: table-caption;
  */
 
 
-.pulsante:hover{
+.sistema_linfatcio:hover{
     background-color: wheat;
     color: wheat;
     scale: 150%;
@@ -82,6 +83,9 @@ display: table-caption;
 
 }
 /* End Pulsanti */
+
+
+/* Start Sezioni */
 
 #sistema_linfatico{
     width: 1000px;
