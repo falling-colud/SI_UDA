@@ -1,116 +1,184 @@
+:root{
+
+    /* h1 variabili */
+    --h1color:rgb(255, 255, 255);
+
+    /* start - variabili dei pulsanti della pagina centrale */
+    --width_Button:352.17px ;
+    --height_Button:255.75px ;
+    --postionxButton: 180.5px;
+    --postionyButton: 500px;
+    --gradiantcolor1:  rgb(182,127,255);
+
+    --gradiantcolor2:linear-gradient(0deg, rgba(255, 153, 0, 0.712) 0%, rgb(248, 161, 0) 100%);
+    /* End - variabili dei pulsanti della pagina centrale */
+
+
+    /* Start - Variabili delle sezioni */
+    --height_sections : var(1000px)
+
+    /* End - Variabili delle sezioni */    
+}
+
+
+
+
 html{
     scroll-behavior: smooth;
 }
 
+
 body{
-    background-color: cadetblue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
     background: rgb(63,94,251);
-background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(2,70,107,1) 100%);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgb(56, 0, 160) 100%);
 }
 
 h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 7em;
-    color: rgb(255, 218, 169);
-    text-align: center ;
-
-}
-
-
-
-
-h3{
-    color: darkslategrey;
-}
-
-/* Start : Pulsanti */
-
-.sistema_linfatcio{
-    width: 200px;
-    height: 150px;
-    background-color: burlywood;
-    position: relative;
-    top: 500px;
-    margin-bottom: 500px;
+    margin: auto;
+    color: var(--h1color);
+    background: -webkit-linear-gradient(#fafafa, #ab98ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     text-align: center;
-    border-radius: 8%;
-    transition: 0.8s;
-    margin:  auto;
-    display: inline-block;
-    display: table-caption;
+    margin-top: 200px;
+    font-size: 100px;
+    margin-bottom: -250px;
 }
 
-/* .sistema_immuntario{
-        width: 200px;
-    height: 150px;
-    background-color: burlywood;
-    position: relative;
-    top: 500px;
-    margin-bottom: 500px;
-    text-align: center;
-    border-radius: 8%;
-    transition: 0.8s;
-    margin:  auto;
-    display: inline-block;
-    display: table-caption;
+
+h4{
+    position: absolute;   
+    left: 32px;
+    top: 32px;
 }
+
+/* ------------------------------------------------------------------- */
+
+/*  Start - Pulsanti della Pagina Centrale  */
+
+.sistema_linfatico {
+    height: var(--height_Button);
+    width: var(--width_Button);
+    background: var(--gradiantcolor1);
+    background: var(--gradiantcolor2);
+    color: wheat;
+    text-align: center;
+    border-radius: 10%;
+    position: relative;
+    top: var(--postionyButton);
+    left: var(--postionxButton);
+    display: inline-block;
+    margin-left: 50px;
+    margin-bottom: 150px;
+    transition: 0.5s;
+    
+}
+
+
+ .sistema_immunitario{
+    height: var(--height_Button);
+    width: var(--width_Button);
+    /* background-color: rgb(26, 0, 172); */
+    background: var(--gradiantcolor1);
+    background: var(--gradiantcolor2);
+    color: wheat;
+    text-align: center;
+    border-radius: 10%;
+    position: relative;
+    top: var(--postionyButton);
+    left: var(--postionxButton);
+    display: inline-block;
+    margin-left: 150px;
+    margin-bottom: 150px;
+    transition: 0.5s;
+}
+
+
 
 .italiano{
-    width: 200px;
-height: 150px;
-background-color: burlywood;
-position: relative;
-top: 500px;
-margin-bottom: 500px;
-text-align: center;
-border-radius: 8%;
-transition: 0.8s;
-margin:  auto;
-display: inline-block;
-display: table-caption;
-}
- */
-
-
-.sistema_linfatcio:hover{
-    background-color: wheat;
+    height: var(--height_Button);
+    width: var(--width_Button);
+    /* background-color: rgb(26, 0, 172); */
+    background: var(--gradiantcolor1);
+    background: var(--gradiantcolor2);
     color: wheat;
-    scale: 150%;
+    text-align: center;
+    border-radius: 10%;
     position: relative;
-    
-    
-
-}
-/* End Pulsanti */
-
-
-/* Start Sezioni */
-
-#sistema_linfatico{
-    width: 1000px;
-    height: 900px;
-    background-color: crimson;
-    margin-bottom: 500px;
-    position: relative;
-    top: 1080px;
+    top: var(--postionyButton);
+    left: var(--postionxButton);
+    display: inline-block;
+    margin-left: 150px;
+    margin-bottom: 150px; 
+    margin-right: 150px;
+    transition: 0.5s;
 }
 
+/* Effetti */
 
-#sistema_immunitaria{
-    width: 1000px;
-    height: 900px;
-    background-color: crimson;
-    margin-bottom: 500px;
-    position: relative;
-    top: 1080px;
+.sistema_linfatico:hover,
+.sistema_immunitario:hover,
+.italiano:hover{
+    transform: scale(110%);
+    background-color: beige;
+    background: rgb(237,255,88);
+    background: radial-gradient(circle, rgba(237,255,88,0.3) 0%, rgba(0,52,107,0.053658963585434205) 100%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#italiano{
-    width: 1000px;
-    height: 900px;
-    background-color: crimson;
-    margin-bottom: 500px;
+/*  End - Pulsanti della Pagina Centrale  */
+
+
+/* ------------------------------------------------------------------------------------------------- */
+
+
+/*  Start - Sezioni Della pagina Centrale  */
+
+#section1 {
+    height: 1250px;
+     width: 1920px;
+    background-color: rgb(0, 89, 148);
+    color: #ffffffce;
+    text-align: center;
+    font-size: 100px;
+    display: flex;
+    margin-top: 50px;
     position: relative;
-    top: 1080px
-}
+    top: 500px;;
+} 
+
+
+
+ #section2{
+    height: 1250px;
+     width: 1920px;
+    background-color: rgb(65, 179, 255);
+    color: #ffffffce;
+    text-align: center;
+    font-size: 100px;
+    display: flex;
+    margin-top: 50px;
+    position: relative;
+    top: 500px;;;
+    } 
+
+
+
+ #section3 {
+    height: 1250px;
+     width: 1920px;
+    background-color: rgb(147, 212, 255);
+    color: #ffffffce;
+    text-align: center;
+    font-size: 100px;
+    display: flex;
+    margin-top: 50px;
+    position: relative;
+    top: 500px;;
+} 
+
+
+/*  End - Sezioni Della pagina Centrale  */
+
+/* ------------------------------------------------------------------------------------------------- */
