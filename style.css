@@ -1,0 +1,112 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: cadetblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(2,70,107,1) 100%);
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 7em;
+    color: rgb(255, 218, 169);
+    text-align: center ;
+
+}
+
+
+
+
+h3{
+    color: darkslategrey;
+}
+
+/* Start : Pulsanti */
+.sistema_linfatcio{
+    width: 200px;
+    height: 150px;
+    background-color: burlywood;
+    position: relative;
+    top: 500px;
+    margin-bottom: 500px;
+    text-align: center;
+    border-radius: 8%;
+    transition: 0.8s;
+    margin:  auto;
+    display: inline-block;
+    display: table-caption;
+}
+
+/* .sistema_immuntario{
+        width: 200px;
+    height: 150px;
+    background-color: burlywood;
+    position: relative;
+    top: 500px;
+    margin-bottom: 500px;
+    text-align: center;
+    border-radius: 8%;
+    transition: 0.8s;
+    margin:  auto;
+    display: inline-block;
+    display: table-caption;
+}
+
+.italiano{
+    width: 200px;
+height: 150px;
+background-color: burlywood;
+position: relative;
+top: 500px;
+margin-bottom: 500px;
+text-align: center;
+border-radius: 8%;
+transition: 0.8s;
+margin:  auto;
+display: inline-block;
+display: table-caption;
+}
+ */
+
+
+.pulsante:hover{
+    background-color: wheat;
+    color: wheat;
+    scale: 150%;
+    position: relative;
+    
+    
+
+}
+/* End Pulsanti */
+
+#sistema_linfatico{
+    width: 1000px;
+    height: 900px;
+    background-color: crimson;
+    margin-bottom: 500px;
+    position: relative;
+    top: 1080px;
+}
+
+
+#sistema_immunitaria{
+    width: 1000px;
+    height: 900px;
+    background-color: crimson;
+    margin-bottom: 500px;
+    position: relative;
+    top: 1080px;
+}
+
+#italiano{
+    width: 1000px;
+    height: 900px;
+    background-color: crimson;
+    margin-bottom: 500px;
+    position: relative;
+    top: 1080px
+}
