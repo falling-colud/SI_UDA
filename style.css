@@ -1,3 +1,26 @@
+:root{
+
+    /* h1 variabili */
+    --h1color:rgb(255, 255, 255);
+
+    /* start - variabili dei pulsanti della pagina centrale */
+    --width_Button:352.17px ;
+    --height_Button:255.75px ;
+    --postionxButton: 180.5px;
+    --postionyButton: 500px;
+    --gradiantcolor1:  rgb(182,127,255);
+
+    --gradiantcolor2:linear-gradient(0deg, rgba(255, 153, 0, 0.712) 0%, rgb(248, 161, 0) 100%);
+    /* End - variabili dei pulsanti della pagina centrale */
+
+
+    /* Start - Variabili delle sezioni */
+    --height_sections : var(1000px)
+
+    /* End - Variabili delle sezioni */    
+}
+
+
 html{
     scroll-behavior: smooth;
 }
