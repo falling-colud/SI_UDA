@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema Linfatico</title>
+    <link rel="stylesheet" href="subpages.css" />
+</head>
+<body>
+<header>
+    <a href="home.html"><img src="logo.png" alt="Logo" /></a>
+    <nav>
+        <button onclick="location.href='sistema_linfatico.html'">Sistema Linfatico</button>
+        <button onclick="location.href='le_cellule.html'">Le Cellule</button>
+        <button onclick="location.href='immunita_innata.html'">Immunità Innata</button>
+        <button onclick="location.href='immunita_adattiva.html'">Immunità Adattiva</button>
+        <button onclick="location.href='placeholder1.html'">Placeholder1</button>
+    </nav>
+</header>
+
+<div class="page-title-bar">
+    <h1>Sistema Immunitario - <span class="subtitle-highlight">Sistema Linfatico</span></h1>
+    <select onchange="scrollToSection(this.value)">
+        <option value="intro">Introduzione</option>
+        <option value="sezione1">Sezione 1</option>
+        <option value="sezione2">Sezione 2</option>
+        <option value="sezione3">Sezione 3</option>
+    </select>
+</div>
+
+<section id="intro">
+    <h2>Introduzione</h2>
+    <p>Questa è l'introduzione al sistema linfatico...</p>
+</section>
+
+<section id="sezione1">
+    <h2>Sezione 1</h2>
+    <p>Contenuto della prima sezione.</p>
+</section>
+
+<section id="sezione2">
+    <h2>Sezione 2</h2>
+    <p>Contenuto della seconda sezione.</p>
+</section>
+
+<section id="sezione3">
+    <h2>Sezione 3</h2>
+    <p>Contenuto della sezione 3.</p>
+</section>
+
+<script>
+    function scrollToSection(id) {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+</script>
+</body>
+</html>
