@@ -1,0 +1,31 @@
+HomePage (Mam)
+    - Base COMPLETED
+    - fare i 5 pulsanti
+    - Suddivisone pulsanti (Mappa / Sottopagina)
+    - Fade tra immagini
+    - Finire le 5 sezioni
+    - Aggiunta contenuto
+    - Collegare le mappe
+
+Mappe (Leo)
+    - Template COMPLETED
+    - Linfatico COMPLETED
+    - Cellule COMPLETED
+    - Immunità adattiva
+    - Immunità innata
+    - Malattie e Vaccini
+
+    - Fix crash
+
+Sottopagine (Leo)
+    - Template COMPLETED
+    - Base COMPLETED
+    - Indice
+
+Contenuto Sottopagine
+    - Suddivisione
+    - Linfatico
+    - Cellule
+    - Immunità adattiva
+    - Immunità innata
+    - Malattie e Vaccini

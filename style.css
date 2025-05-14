@@ -2,34 +2,81 @@
 
     /* h1 variabili */
     --h1color:rgb(255, 255, 255);
+ 
+    --h1y : 200px;
 
     /* start - variabili dei pulsanti della pagina centrale */
-    --width_Button:252.17px ;
-    --height_Button:155.75px ;
-    --postionxButton: 450.5px;
-    --postionyButton: 400px;
-    --gradiantcolor1:  rgb(182,127,255);
+    --width_Button:202.17px ;
+    --height_Button:129px ;
+    --postionxButton: 280px;
+    --postionyButton: 550px;
+    --d_between: 300px;
+    --gradiantcolor1:  #020024;;
 
-    --gradiantcolor2:linear-gradient(0deg, rgba(255, 153, 0, 0.712) 0%, rgb(248, 161, 0) 100%);
+    --gradiantcolor2:linear-gradient(180deg,rgba(128, 128, 128, 0.596) 0%, rgba(146, 146, 146, 0.48) 30%, rgba(243, 243, 243, 0.521) 100%);
+
+    /* Mappe conttuale Pulsanti */
+    --mc_color1: #3068d1;
+    --mc_color2: linear-gradient(181deg, rgba(240, 240, 240, 0) 0%, rgba(0, 81, 156, 0.473) 30%, rgba(230, 245, 238, 0) 100%);
+    
+
+    /* TEXT Pulsanti*/
+    --subtitle_x: auto;
+    --subtitle_y:55px; 
+    /* End : Text Pulsanti */
+
+    
     /* End - variabili dei pulsanti della pagina centrale */
 
+    /* Blocchi */
+    
+    /* Blocco 1 */
+    --Position_B1:800px;
 
     /* Start - Variabili delle sezioni */
-    --height_sections : var(1000px)
+    --height_sections_linf : var(1900px);
+    --width_sections_linf  : var(1800px);
 
     /* End - Variabili delle sezioni */    
+
+    /* Mappe Concettuale */
+
+    /* Mappa Concettuale del Sistema Linfatico  */
+
+    --height_linfMap : 1000px;
+    --width_linfMap : 600px;
+
+    /*Mappa Concettuale del  Sistema Immunitaria  */
+    --height_ImmuneMap : 1000px;
+    --width_ImmuneMap : 1200px;
+
+
 }
+
+
+*{
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline none ;
+}
+
 
 
 html{
     scroll-behavior: smooth;
 }
 
+
 body{
-    background-color: cadetblue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: rgb(63,94,251);
-background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(2,70,107,1) 100%);
+
+   background-color: #0f0f0f; 
+
+}
+
+a{
+    text-decoration: none;
+    color: wheat;
 }
 
 h1{
@@ -39,7 +86,7 @@ h1{
     text-align: center ;
     position: relative;
     top: 300px;
-
+    left: 500px;
 }
 
 
@@ -49,12 +96,6 @@ h3{
     color: white;
     font-size: 1em;
 }
-
-/* h4.button{
-    position: absolute;   
-    left: 20px;
-    top: 32px;
-} */
 
 /* ------------------------------------------------------------------- */
 
@@ -109,114 +150,459 @@ h4.sistema_linfatico{
     height: var(--height_Button);
     width: var(--width_Button);
     /* background-color: rgb(26, 0, 172); */
+    margin: auto;
+    color: var(--h1color);
+    background: -webkit-linear-gradient(#9e0404, #ab98ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    position: absolute;
+    top: var(--h1y);
+    font-size: 100px;
+    margin-bottom: -250px;
+    margin-left: 25%;
+}
+
+/* ------------------------------------------------------------------- */
+/* main */
+
+
+
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: linear-gradient(white , black);
+    background-image: url(Imag/1.pagina_centrale/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 0px;
+    transition: background-image  0.8s ease;
+    display: flex;
+}
+
+#main.hovered1 {
+    background-image: url(Imag/1.pagina_centrale/Limph_bg.png); 
+  }
+
+  #main.hovered2 {
+    background-image: url(Imag/1.pagina_centrale/immune\ bg.png);
+  }
+
+  #main.hovered3{
+
+  }
+
+  #main.hovered4{
+    
+  }
+
+  #main.hovered5{
+    
+  }
+
+/* buttone Mappe Conttuali dentro i pulsanti */
+.MC_Button{
+    background: var(--mc_color1);
+    background: var(--mc_color2);
+    color: #fdffe081;
+    position: relative;
+    bottom: 180px;
+    transition: 1.2s;
+    border-radius: 3px;
+    opacity: 0%;
+    text-decoration: none;
+
+    
+}
+
+.MC_Button:hover{
+    color: rgb(255, 255, 249);
+    transition: 1.5s;  
+}
+  
+
+.b_subtitle{
+    margin-right: var(--subtitle_x);
+    margin-top: var(--subtitle_y);
+}
+
+.sistema_linfatico {
+    height: var(--height_Button);
+    width: var(--width_Button);
+    background: var(--gradiantcolor1);
+    background: var(--gradiantcolor2);
+    color: rgb(255, 248, 236);
+    text-align: center;
+    border-radius: 10%;
+    position: absolute;
+    top: var(--postionyButton);
+    left: var(--postionxButton);
+    display:inline-block ;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    transition: 0.5s;   
+}
+
+
+
+.cellule{
+    height: var(--height_Button);
+    width: var(--width_Button);
     background: var(--gradiantcolor1);
     background: var(--gradiantcolor2);
     color: wheat;
     text-align: center;
     border-radius: 10%;
-    position: relative;
-    top: var(--postionyButton);
-    left: var(--postionxButton);
+    position: absolute;
+    top: 550px;
+    left: 235px;
     display: inline-block;
-    margin-left: 100px;
-    margin-bottom: 150px; 
-    margin-right: 150px;
+    margin-left: var(--d_between);
+    margin-bottom: 0px;
+    margin-top: 0px;
     transition: 0.5s;
 }
 
+.innata{
+    height: var(--height_Button);
+    width: var(--width_Button);
+    background: var(--gradiantcolor1);
+    background: var(--gradiantcolor2);
+    color: wheat;
+    text-align: center;
+    border-radius: 10%;
+    position: absolute;
+    top: 550px;
+    left: 500px;
+    display: inline-block;
+    margin-left: var(--d_between);
+    margin-bottom: 0px;
+    margin-top: 0px;
+    transition: 0.5s;
+}
+
+.adattiva{
+    height: var(--height_Button);
+    width: var(--width_Button);
+    background: var(--gradiantcolor1);
+    background: var(--gradiantcolor2);
+    color: wheat;
+    text-align: center;
+    border-radius: 10%;
+    position: absolute;
+    top: 550px;
+    left: 770px;
+    display: inline-block;
+    margin-left: var(--d_between);
+    margin-bottom: 0px;
+    margin-top: 0px;
+    transition: 0.5s;
+}
+
+.malattie{
+    height: var(--height_Button);
+    width: var(--width_Button);
+    background: var(--gradiantcolor1);
+    background: var(--gradiantcolor2);
+    color: wheat;
+    text-align: center;
+    border-radius: 10%;
+    position: absolute;
+    top: 550px;
+    left: 1040px;
+    display: inline-block;
+    margin-left: var(--d_between);
+    margin-bottom: 0px;
+    margin-top: 0px;
+    transition: 0.5s;
+}
+
+
+
 /* Effetti */
 
+#immune-cell.hovered {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+    transition: all 1s ease;
+  }
+
+
 .sistema_linfatico:hover,
-.sistema_immunitario:hover,
-.italiano:hover{
+.cellule:hover,
+.innata:hover,
+.adattiva:hover,
+.malattie:hover{
     transform: scale(110%);
+    height: 200px;
     background-color: beige;
     background: rgb(237,255,88);
-    background: radial-gradient(circle, rgba(237,255,88,0.3) 0%, rgba(0,52,107,0.053658963585434205) 100%);
+    background: radial-gradient(circle, rgba(98, 166, 255, 0.363) 0%, rgba(73, 158, 255, 0.054) 100%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/*  End - Pulsanti della Pagina Centrale  */
+/* Effetti Descrizione classi */
 
+.wrapper .show-on-hover {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+    width: none;
+    height: none;
+  }
+  
+  .wrapper:hover .show-on-hover {
+      opacity: 1;
+  visibility: visible;
+  width: none;
+  height: none;
+  }
+
+
+/*  End - Pulsanti della Pagina Centrale  */
+/* Blocks */
+#block1{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    position: absolute;
+    top: var(--Position_B1);
+    }
+/* End Blocks */
 
 /* ------------------------------------------------------------------------------------------------- */
 
 
 /*  Start - Sezioni Della pagina Centrale  */
 
-#section1 {
-    height: 1250px;
-     width: 1920px;
-    background-color: rgb(0, 89, 148);
-    color: #ffffffce;
-    text-align: center;
+/* Caratteri Generali per i Sezioni*/
+.section_title{
     font-size: 100px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    margin-left: 0%;
+    
+    
+}
+
+.section_title h2 {
+    font-size: 40px;
+}
+
+
+
+/* Sistema Linfatico */
+#linf-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url(Imag/1.pagina_centrale/linf-section/ling-section-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 100px;
     display: flex;
-    margin-top: 50px;
-    position: relative;
-    top: 500px;;
+    align-items: center;
+    justify-content: space-around; 
 } 
 
-
-
- #section2{
-    height: 1250px;
-     width: 1920px;
-    background-color: rgb(65, 179, 255);
-    color: #ffffffce;
-    text-align: center;
-    font-size: 100px;
-    display: flex;
-    margin-top: 50px;
+#linf-section h2{
+    font-weight: 300;
+    font-size: 64px;
+    width: 500px;
+    color: azure;
     position: relative;
-    top: 500px;;;
+    top: -400px;
+    right:0px;
+    
+}
+
+.linf-content{
+    position: absolute;
+}
+#linf-section p {
+    width: 500px;
+    color: rgb(0, 133, 133);
+    position: absolute;
+    top: -300px;
+    
+}
+
+#linf_map{
+    height:700px;
+    width: var(--width_linfMap);
+    background-color: #05743c;
+    position: relative;
+    bottom: -100px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* Ceullule */
+ #cellule-section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Imag/1.pagina_centrale/immune-section/bg\ immune\ section.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
     } 
-
-
-
- #section3 {
-    height: 1250px;
-     width: 1920px;
-    background-color: rgb(147, 212, 255);
-    color: #ffffffce;
-    text-align: center;
-    font-size: 100px;
-    display: flex;
-    margin-top: 50px;
+    .cellule-section{
+        position: absolute;
+    }
+    #cellule-section h2{
+        font-weight: 300;
+        font-size: 64px;
+        width: 600px;
+        color: azure;
+        position: relative;
+        top: -340px;  
+        left: 600px;
+    }
+    #cellule-section p {
+        width: 595px;
+        color: rgb(229, 255, 0);
+        position: relative;
+        top: -350px;      
+    }
+    #immune_map{
+    height:700px;
+    width: var(--width_ImmuneMap);
+    background-color: #742405;
     position: relative;
-    top: 500px;;
-} 
+    bottom: -100px;
+    right: 300px;
+    opacity: 100%;
+    }
 
+/* ------------------------------------------------------------------------------------------ */
+/* Immunit' innata */
+
+    #innata-section{
+        width: 100%;
+        height: 100vh;
+        background-image: url(Imag/1.pagina_centrale/immune-section/bg\ immune\ section.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around; 
+        } 
+        .innata-section{
+            position: absolute;
+        }
+        #innata-section h2{
+            font-weight: 300;
+            font-size: 64px;
+            width: 600px;
+            color: azure;
+            position: relative;
+            top: -360px;  
+            left: 600px;
+        }
+        #innata-section p {
+            width: 595px;
+            color: rgb(229, 255, 0);
+            position: relative;
+            top: -350px;      
+        }
+        #innata_map{
+        height:700px;
+        width: var(--width_ImmuneMap);
+        background-color: #a5431d;
+        position: relative;
+        bottom: -100px;
+        right: 300px;
+        opacity: 100%;
+        }
+/* ------------------------------------------------------------------------------------------------- */
+/* Immunit' adattiva */
+
+#adattiva-section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Imag/1.pagina_centrale/immune-section/bg\ immune\ section.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    } 
+    .adattiva-section{
+        position: absolute;
+    }
+    #adattiva-section h2{
+        font-weight: 300;
+        font-size: 64px;
+        width: 600px;
+        color: azure;
+        position: relative;
+        top: -360px;  
+        left: 600px;
+    }
+    #adattiva-section p {
+        width: 595px;
+        color: rgb(229, 255, 0);
+        position: relative;
+        top: -350px;      
+    }
+    #adattiva_map{
+    height:700px;
+    width: var(--width_ImmuneMap);
+    background-color: #9b4a2a;
+    position: relative;
+    bottom: -100px;
+    right: 300px;
+    opacity: 100%;
+    }
+
+/* ------------------------------------------------------------------------------------------------- */
+/* Immunit' adattiva */
+
+#malattie-section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Imag/1.pagina_centrale/immune-section/bg\ immune\ section.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    } 
+    .malattie-section{
+        position: absolute;
+    }
+    #malattie-section h2{
+        font-weight: 300;
+        font-size: 64px;
+        width: 600px;
+        color: azure;
+        position: relative;
+        top: -360px;  
+        left: 600px;
+    }
+    #malattie-section p {
+        width: 595px;
+        color: rgb(229, 255, 0);
+        position: relative;
+        top: -350px;      
+    }
+    #malattie_map{
+    height:700px;
+    width: var(--width_ImmuneMap);
+    background-color: #e07950;
+    position: relative;
+    bottom: -100px;
+    right: 300px;
+    opacity: 100%;
+    }
 
 /*  End - Sezioni Della pagina Centrale  */
 
-/* ----------------------------------------------------------------------------------------------
-
-
-/* Start - Contenuto dei sezioni */
-
-/* Sistema Linfatico */
-div.subtitle{
-    font-size: 1em;
-    color: white;
-    display: block;
-}
-
-
-.section_p{
-    font-size: 40px;
-    display: block;
-    color: antiquewhite;
-}
-
-.imglinf{
-    width:300px;
-    height: 300px;
-    background-color: blue;
-    border-radius: 5%;
-    position: absolute;
-    left: 280px;
-    top: 70px;
-    display: inline-block;
-  }
-  
+/* ------------------------------------------------------------------------------------------------- */
