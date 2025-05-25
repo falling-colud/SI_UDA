@@ -12,9 +12,9 @@
     <nav>
         <button onclick="location.href='sistema_linfatico.html'">Sistema Linfatico</button>
         <button onclick="location.href='le_cellule.html'">Le Cellule</button>
-        <button onclick="location.href='immunita_innata.html'">Immunità Innata</button>
+        <button class="active">Immunità Innata</button>
         <button onclick="location.href='immunita_adattiva.html'">Immunità Adattiva</button>
-        <button onclick="location.href='placeholder1.html'">Placeholder1</button>
+        <button onclick="location.href='vaccini_malattie.html'">Vaccini e Malattie</button>
     </nav>
 </header>
 
@@ -25,12 +25,28 @@
         <option value="sezione1">Sezione 1</option>
         <option value="sezione2">Sezione 2</option>
         <option value="sezione3">Sezione 3</option>
+        <option value="sezione4">Sezione 4</option>
+        <option value="sezione5">Sezione 5</option>
+        <option value="sezione6">Sezione 6</option>
     </select>
 </div>
 
 <section id="intro">
     <h2>Introduzione</h2>
     <p>Questa è l'introduzione all'immunita adattiva...</p>
+</section>
+
+<section id="indice" class="indice">
+    <h2>Indice</h2>
+    <ul>
+        <li onclick="scrollToSection('intro')">Introduzione</li>
+        <li onclick="scrollToSection('sezione1')">Sezione 1</li>
+        <li onclick="scrollToSection('sezione2')">Sezione 2</li>
+        <li onclick="scrollToSection('sezione3')">Sezione 3</li>
+        <li onclick="scrollToSection('sezione4')">Sezione 4</li>
+        <li onclick="scrollToSection('sezione5')">Sezione 5</li>
+        <li onclick="scrollToSection('sezione6')">Sezione 6</li>
+    </ul>
 </section>
 
 <section id="sezione1">
@@ -46,6 +62,21 @@
 <section id="sezione3">
     <h2>Sezione 3</h2>
     <p>Contenuto della sezione 3.</p>
+</section>
+
+<section id="sezione4">
+    <h2>Sezione 3</h2>
+    <p>Contenuto della sezione 4.</p>
+</section>
+
+<section id="sezione5">
+    <h2>Sezione 3</h2>
+    <p>Contenuto della sezione 5.</p>
+</section>
+
+<section id="sezione6">
+    <h2>Sezione 3</h2>
+    <p>Contenuto della sezione 6.</p>
 </section>
 
 <script>

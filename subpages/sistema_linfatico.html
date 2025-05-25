@@ -10,11 +10,11 @@
 <header>
     <a href="home.html"><img src="logo.png" alt="Logo" /></a>
     <nav>
-        <button onclick="location.href='sistema_linfatico.html'">Sistema Linfatico</button>
+        <button class="active">Sistema Linfatico</button>
         <button onclick="location.href='le_cellule.html'">Le Cellule</button>
         <button onclick="location.href='immunita_innata.html'">Immunità Innata</button>
         <button onclick="location.href='immunita_adattiva.html'">Immunità Adattiva</button>
-        <button onclick="location.href='placeholder1.html'">Placeholder1</button>
+        <button onclick="location.href='vaccini_malattie.html'">Vaccini e Malattie</button>
     </nav>
 </header>
 
@@ -31,6 +31,15 @@
 <section id="intro">
     <h2>Introduzione</h2>
     <p>Questa è l'introduzione al sistema linfatico...</p>
+</section>
+
+<section id="indice" class="indice">
+    <h2>Indice</h2>
+    <ul>
+        <li onclick="scrollToSection('intro')">Introduzione</li>
+        <li onclick="scrollToSection('sezione1')">Sezione 1</li>
+        <li onclick="scrollToSection('sezione2')">Sezione 2</li>
+    </ul>
 </section>
 
 <section id="sezione1">

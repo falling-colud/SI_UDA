@@ -1,3 +1,6 @@
+html {
+      scroll-padding-top: 308px; /* Altezza header + titolo */
+    }
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -5,6 +8,9 @@
       color: #003366;
     }
     header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -13,23 +19,33 @@
       color: white;
     }
     header img {
-      height: 30px;
-      width: 150px;
+      height: 160px;
+      width: 250px;
       cursor: pointer;
+      border-radius: 8px;
     }
     nav button {
       margin-left: 10px;
       background-color: #005fa3;
       color: white;
       border: none;
-      padding: 8px 12px;
-      border-radius: 5px;
+      padding: 28px 36px;
+      font-size: 24px;
+      border-radius: 12px;
       cursor: pointer;
     }
     nav button:hover {
       background-color: #004080;
     }
+    nav button.active {
+      background-color: #003366;
+      cursor: default;
+      font-weight: bold;
+    }
     .page-title-bar {
+      position: sticky;
+      top: 180px;
+      z-index: 999;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -37,7 +53,7 @@
       background-color: #e0f0ff;
     }
     .page-title-bar h1 {
-      font-size: 24px;
+      font-size: 48px;
     }
     .subtitle-highlight {
       font-weight: bold;
@@ -61,4 +77,25 @@
     section {
       padding: 20px;
       border-bottom: 1px solid #ccc;
+    }
+    .indice {
+      background-color: #ffffff;
+      padding: 20px;
+      border-bottom: 1px solid #ccc;
+    }
+    .indice h2 {
+      color: #005fa3;
+    }
+    .indice ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    .indice li {
+      margin-bottom: 10px;
+      cursor: pointer;
+      color: #003366;
+    }
+    .indice li:hover {
+      text-decoration: underline;
+      color: #0077cc;
     }

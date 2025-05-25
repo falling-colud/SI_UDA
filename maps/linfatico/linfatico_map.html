@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Overlay with Hover Effect</title>
+    <link rel="stylesheet" href="../maps.css" />
+    <style>
+        .hover-zone {
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          background-color: rgba(0, 0, 0, 0.3); /* Red translucent box */
+          z-index: 3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="linfatico.png" alt="Base Image" class="base-image">
+
+    <img src="cisterna_chilo.png" alt="Overlay Image" class="overlay-image" id="overlay1">
+    <div class="hover-zone"
+         style="top: 40.75%; left: 50.4%; width: 20px; height:20px"
+         onmouseover="showPopup(event, 'overlay1', 1.75)"
+         onmouseout="hidePopup('overlay1')"
+         onclick="window.location.href='https://example.com'">
+    </div>
+    <div class="popup" id="popup-overlay1"
+         style="top: 40.75%; left: 50.4%; transform: translate(+10%, -10%);">
+        <strong>Cisterna del Chilo</strong><br>
+        Ampolla che raccoglie la linfa da intestino e arti inferiori.
+    </div>
+
+    <img src="linfonodi_ascellari.png" alt="Overlay Image" class="overlay-image" id="overlay2">
+    <div class="hover-zone"
+         style="top: 26.75%; left: 44.4%; width: 55px; height:85px"
+         onmouseover="showPopup(event, 'overlay2', 1.3)"
+         onmouseout="hidePopup('overlay2')"
+         onclick="window.location.href='https://example.com'">
+    </div>
+    <div class="popup" id="popup-overlay2"
+         style="top: 26.75%; left: 45.4%; transform: translate(+10%, -10%);">
+        <strong>Linfonodi Ascellari</strong><br>
+        Filtrano la linfa di braccia, torace e parte del seno.
+    </div>
+
+    <img src="linfonodi_cervicali.png" alt="Overlay Image" class="overlay-image" id="overlay3">
+    <div class="hover-zone"
+         style="top: 17.75%; left: 51.5%; width: 20px; height:40px"
+         onmouseover="showPopup(event, 'overlay3', 1.75)"
+         onmouseout="hidePopup('overlay3')"
+         onclick="window.location.href='https://example.com'">
+    </div>
+    <div class="popup" id="popup-overlay3"
+         style="top: 17.75%; left: 51.5%; transform: translate(-107.5%, -110%);">
+        <strong>Linfonodi Cervicali</strong><br>
+        Proteggono da infezioni di testa, collo e gola.
+    </div>
+
+    <img src="linfonodi_pelvici.png" alt="Overlay Image" class="overlay-image" id="overlay4">
+    <div class="hover-zone"
+         style="top: 53.75%; left: 47%; width: 60px; height:80px"
+         onmouseover="showPopup(event, 'overlay4', 1.3)"
+         onmouseout="hidePopup('overlay4')"
+         onclick="window.location.href='https://example.com'">
+    </div>
+    <div class="popup" id="popup-overlay4"
+         style="top: 53.75%; left: 47%; transform: translate(+20%, +20%);">
+        <strong>Linfonodi Pelvici</strong><br>
+        Difendono gli organi interni della zona pelvica.
+    </div>
+
+    <img src="linfonodi_polipetali.png" alt="Overlay Image" class="overlay-image" id="overlay5">
+    <div class="hover-zone"
+         style="top: 71%; left: 54%; width: 38px; height:70px"
+         onmouseover="showPopup(event, 'overlay5', 1.45)"
+         onmouseout="hidePopup('overlay5')"
+         onclick="window.location.href='https://example.com'">
+    </div>
+    <div class="popup" id="popup-overlay5"
+         style="top: 71%; left: 54%; transform: translate(-110%, +20%);">
+        <strong>Linfonodi Polipetali</strong><br>
+        Smaltiscono la linfa da gambe, genitali e basso ventre.
+    </div>
+
+    <img src="timo.png" alt="Overlay Image" class="overlay-image" id="overlay6">
+    <div class="hover-zone"
+         style="top: 23%; left: 50.4%; width: 30px; height:35px"
+         onmouseover="showPopup(event, 'overlay6', 1.5)"
+         onmouseout="hidePopup('overlay6')"
+         onclick="window.location.href='https://example.com'">
+    </div>
+    <div class="popup" id="popup-overlay6"
+         style="top: 23%; left: 50.4%; transform: translate(+10%, -10%);">
+        <strong>Timo</strong><br>
+        Sede di maturazione dei linfociti T nei bambini.
+    </div>
+
+    <img src="milza.png" alt="Overlay Image" class="overlay-image" id="overlay7">
+    <div class="hover-zone"
+         style="top: 37%; left: 53.75%; width: 30px; height:35px"
+         onmouseover="showPopup(event, 'overlay7', 1.5)"
+         onmouseout="hidePopup('overlay7')"
+         onclick="window.location.href='https://example.com'">
+    </div>
+    <div class="popup" id="popup-overlay7"
+         style="top: 37%; left: 53.75%; transform: translate(-110%, -110%);">
+        <strong>Milza</strong><br>
+        Filtra il sangue e partecipa alla difesa immunitaria.
+    </div>
+
+    <img src="tonsille_1.png" alt="Overlay Image" class="overlay-image" id="overlay8_1">
+    <div class="hover-zone"
+         style="top: 13.6%; left: 48.75%; width: 15px; height:13px"
+         onmouseover="showPopup(event, 'overlay8_1', 2)"
+         onmouseout="hidePopup('overlay8_1')"
+         onclick="window.location.href='https://example.com'">
+    </div>
+    <img src="tonsille_2.png" alt="Overlay Image" class="overlay-image" id="overlay8_2">
+    <div class="hover-zone"
+         style="top: 13.6%; left: 51.75%; width: 15px; height:13px"
+         onmouseover="showPopup(event, 'overlay8_2', 2)"
+         onmouseout="hidePopup('overlay8_2')"
+         onclick="window.location.href='https://example.com'">
+    </div>
+
+    <div class="popup" id="popup-overlay8_1"
+         style="top: 13.6%; left: 51.75%; transform: translate(+10%, -120%);">
+        <strong>Tonsille</strong><br>
+        Intercettano germi che entrano da naso e bocca.
+    </div>
+    <div class="popup" id="popup-overlay8_2"
+         style="top: 13.6%; left: 51.75%; transform: translate(+10%, -120%);">
+        <strong>Tonsille</strong><br>
+        Intercettano germi che entrano da naso e bocca.
+    </div>
+</div>
+
+
+</div>
+
+
+
+<script>
+    function showPopup(event, overlayId, scaling = 1.2) {
+      const overlay = document.getElementById(overlayId);
+      const popup = document.getElementById("popup-" + overlayId);
+      const zone = event.currentTarget;
+
+      if (!overlay || !popup || !zone) {
+        console.warn("Invalid overlay or popup or trigger zone.");
+        return;
+      }
+
+      // Default scaling fallback
+      const scaleValue = typeof scaling === 'number' && scaling > 0 ? scaling : 1;
+
+      // Get bounding rectangles
+      const zoneRect = zone.getBoundingClientRect();
+      const containerRect = zone.parentElement.getBoundingClientRect();
+
+      // Calculate transform origin relative to container
+      const centerX = zoneRect.left + zoneRect.width / 2 - containerRect.left;
+      const centerY = zoneRect.top + zoneRect.height / 2 - containerRect.top;
+
+      // Apply overlay styles
+      overlay.style.opacity = '1';
+      overlay.style.transformOrigin = `${centerX}px ${centerY}px`;
+      overlay.style.transform = `scale(${scaleValue})`;
+      overlay.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+
+      // Show popup
+      popup.style.display = 'block';
+    }
+    function hidePopup(overlayId) {
+      const overlay = document.getElementById(overlayId);
+      const popup = document.getElementById("popup-" + overlayId);
+
+      if (overlay) {
+        overlay.style.opacity = '0';
+        overlay.style.transform = 'scale(1)';
+      }
+      if (popup) {
+        popup.style.display = 'none';
+      }
+    }
+
+</script>
+
+</body>
+</html>
