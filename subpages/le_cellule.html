@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Le Cellule</title>
     <link rel="stylesheet" href="subpages.css" />
+    <style>
+        p.text{
+        text-align: left;
+        font-size: 14px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+      }
+    </style>
 </head>
 <body>
 <header>
@@ -14,33 +21,130 @@
         <button onclick="location.href='le_cellule.html'">Le Cellule</button>
         <button onclick="location.href='immunita_innata.html'">Immunità Innata</button>
         <button onclick="location.href='immunita_adattiva.html'">Immunità Adattiva</button>
-        <button onclick="location.href='placeholder1.html'">Placeholder1</button>
+        <button onclick="location.href='placeholder1.html'">Vaccini e patologie</button>
     </nav>
 </header>
+
+
+
 
 <div class="page-title-bar">
     <h1>Sistema Immunitario - <span class="subtitle-highlight">Le Cellule</span></h1>
     <select onchange="scrollToSection(this.value)">
-        <option value="intro">Introduzione</option>
-        <option value="sezione1">Sezione 1</option>
-        <option value="sezione2">Sezione 2</option>
+        <option value="Granulociti">Granulociti</option>
+        <option value="Monociti">Monociti</option>
+        <option value="Linfociti">Linfociti</option>
+        <option value="Fibroblasti">Fibroblasti</option>
     </select>
 </div>
 
-<section id="intro">
-    <h2>Introduzione</h2>
-    <p>Questa è l'introduzione alle cellule...</p>
+
+
+
+<section id="Granulociti">
+    <h2>Granulociti</h2>
+    <div style="display:flex; align-items: center;">
+            <div style="text-align: left">
+              <p>
+               I granulociti sono globuli bianchi caratterizzati dalla presenza di granuli nel <br>
+               citoplasma e da un nucleo diviso in più lobi.<br>
+               I granulociti si trovano nel midollo osseo,dove hanno origine,nel sangue e nei tessuti;<br>
+               si dividono in tre tipologie:eosinofili,basofili e neutrofili.<br>
+              </p>
+              <ul>
+                <li><strong>Eosinofili</strong>:si trovano nel tratto digerente e respiratorio ,<br>
+                    nel tessuto connettivo cutaneo ed intervengono nelle<br>
+                    infestazioni di parassiti e nelle reazioni allergiche.</li>
+                <li><strong>Basofili</strong>:si trovano nel sangue e nei tessuti ed intervengono<br>
+                    nelle reazioni allaergiche dove rilasciano eparina ed<br>
+                    istamina.</li>
+                <li><strong>Neutrofili</strong>:si trovano nel sangue ed intervengono nelle infiammazioni<br>
+                     acute fagotando i patogeni e rilasciando mediatori <br>
+                     infiammatori.</li>
+              </ul>
+          </div>
+          <img src="granulociti.png" style="border: 1px solid #2a6eb2; width: 400px; height: 300px; margin-left: 800px; margin-top: -10px; position:absolute;">
+    </div>
 </section>
 
-<section id="sezione1">
-    <h2>Sezione 1</h2>
-    <p>Contenuto della prima sezione.</p>
+
+
+
+<section id="Monociti">
+    <h2>Monociti</h2>
+    <div style="display:flex; align-items: center;">
+            <div style="text-align: left">
+              <p>
+              I monociti sono un particolare tipo di globuli bianchi che circolano<br>
+              liberamente nel sangue e, successivamente, migrano nei tessuti dove<br>
+              aumentano di dimensione e si differenziano in macrofagi e cellule<br>
+              dendritiche.<br>
+              </p>
+              <ul>
+                <li><strong>Cellule dendritiche</strong>:sono cellule tessutali con la funzione <br>
+                di riconoscere,fagocitare ed eliminare i componenti non<br>
+                self conservando gli antigeni.<br>
+                La principale funzione delle cellule dendritiche è, una volta eliminato il <br>
+                patogeno e prelevato l’antigene,quella di trasportarlo agli organi linfoidi <br>
+                secondari e di presentare gli antigeni ai linfociti.</li>
+                <li><strong>Macrofagi</strong>:intervengono nella fase tardiva dell’infiammazione <br>
+                acuta,nell’infiammazione cronica,nelleinfezioni parassitarie<br>
+                e nelle allergie  attraverso la fagocitosi dei patogeni e la <br>
+                secrezione di mediatori infiammatori.<br></li>
+              </ul>
+          </div>
+           <img src="monociti.png" style="border: 1px solid #2a6eb2; width: 400px; height: 300px; margin-left: 800px; margin-top: -10px; position:absolute;">
+    </div>
 </section>
 
-<section id="sezione2">
-    <h2>Sezione 2</h2>
-    <p>Contenuto della seconda sezione.</p>
+
+
+
+<section id="Linfociti">
+    <h2>Lnfociti</h2>
+    <div style="display:flex; align-items: center;">
+            <div style="text-align: left">
+              <p>
+              I linfociti sono un tipo di globuli bianchi con la funzione di mantenere il <br>
+              sistema immunitario in grado di rispondere in modo efficace alle minacce.<br>
+              I linfociti vengono prodotti nel midollo osseo e maturano negli organi linfoidi.<br>
+              Esistono tre tipi di linfociti: linfociti B, linfociti T e cellule Natural Killer.
+              </p>
+              <ul>
+                <li><strong>Linfociti T</strong>:Sono responsabili della risposta immunitaria cellulare<br>
+                contro cellule infettate da virus, batteri e cellule tumorali. Inoltre, questi <br>
+                linfociti stimolano la produzione di anticorpi da parte dei linfociti B e<br>
+                favoriscono la fagocitosi.</li>
+                <li><strong>Linfociti B</strong>:Sono capaci di riconoscere un antigene specifico e,<br>
+                una volta entrati in contatto con il patogeno, generano una risposta immunitaria <br>
+                umorale. Infatti, sono in grado di produrre anticorpi che si legano ai patogeni,<br>
+                rendendoli riconoscibili dai fagociti, i quali li eliminano.<br></li>
+                <li><strong>Cellule natural killer</strong>:sono in grado di riconoscere ed uccidere cellule <br>
+                    infettate da virus o cellule tumorali.
+              </ul>
+          </div>
+           <img src="linfociti.png" style="border: 1px solid #2a6eb2; width: 400px; height: 300px; margin-left: 800px; margin-top: -10px; position:absolute;">
+    </div>
 </section>
+<section id="Fibroblasti">
+    <h2>Fibroblasti</h2>
+    <div style="display:flex; align-items: center;">
+            <div style="text-align: left">
+              <p >
+                I <strong>fibroblasti</strong> sono cellule residenti del tessuto connettivo, localizzate principalmente nel <br>
+                connettivo lasso e in quello denso. Sono responsabili della produzione dei componenti della <br>
+                matrice extracellulare, tra cui collagene, elastina e proteoglicani. Svolgono un ruolo<br>
+                fondamentale nella riparazione delle ferite e nella secrezione di fattori di crescita e citochine.<br>
+              </p>
+          </div>
+           <img src="fibroblasti.png" style="border: 1px solid #2a6eb2; width: 400px; height: 150px; margin-left: 800px; margin-top: -10px;margin-bottom: 50px; position:absolute;">
+    </div>
+</section>
+
+
+
+
+
 
 <script>
     function scrollToSection(id) {

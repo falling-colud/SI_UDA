@@ -1,11 +1,14 @@
 HomePage (Mam)
     - Base COMPLETED
-    - fare i 5 pulsanti
-    - Suddivisone pulsanti (Mappa / Sottopagina)
+    - fare i 5 pulsanti (COMPLETED)
+    - Suddivisone pulsanti (Mappa / Sottopagina) (COMPLETED)
     - Fade tra immagini
-    - Finire le 5 sezioni
-    - Aggiunta contenuto
-    - Collegare le mappe
+    - Finire le 5 sezioni (COMPLETED)
+    - Aggiunta contenuto 
+    - Collegare le mappe (COMPLETED)
+    - Cambiare lo sfondo e organizzare le sezioni 
+    - Rendere  i text più carini ( h2 )
+    - Gestire i colori (COMPLETED)
 
 Mappe (Leo)
     - Template COMPLETED

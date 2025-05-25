@@ -1,3 +1,5 @@
+<!-- Immunità innata -->
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -5,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Immunità Innata</title>
     <link rel="stylesheet" href="subpages.css" />
+    <style>
+          p.text{
+        text-align: left;
+        font-size: 14px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+      }
+    </style>
 </head>
 <body>
 <header>
@@ -14,39 +23,159 @@
         <button onclick="location.href='le_cellule.html'">Le Cellule</button>
         <button onclick="location.href='immunita_innata.html'">Immunità Innata</button>
         <button onclick="location.href='immunita_adattiva.html'">Immunità Adattiva</button>
-        <button onclick="location.href='placeholder1.html'">Placeholder1</button>
+        <button onclick="location.href='placeholder1.html'">Vaccini e patologie</button>
     </nav>
 </header>
+
+
+
 
 <div class="page-title-bar">
     <h1>Sistema Immunitario - <span class="subtitle-highlight">Immunità Innata</span></h1>
     <select onchange="scrollToSection(this.value)">
         <option value="intro">Introduzione</option>
-        <option value="sezione1">Sezione 1</option>
-        <option value="sezione2">Sezione 2</option>
-        <option value="sezione3">Sezione 3</option>
+        <option value="Difese esterne">Difese esterne</option>
+        <option value="Difese interne">Difese interne</option>
+        <option value="Reazione infiammatoria">Reazione infiammatoria</option>
     </select>
 </div>
 
+
+
+
 <section id="intro">
     <h2>Introduzione</h2>
-    <p>Questa è l'introduzione all'immunita adattiva...</p>
+    <p>L’immunità innata o aspecifica comprende diversi meccanismi genetici che agiscono allo stesso modo contro tutti i patogeni,<br>
+      impedendo loro di penetrare nell’organismo o di diffondersi una volta entrati. Queste difese sono presenti sin dalla nascita,<br>
+       non richiedono un'esposizione precedente al patogeno e agiscono molto rapidamente
+    </p>
 </section>
 
-<section id="sezione1">
-    <h2>Sezione 1</h2>
-    <p>Contenuto della prima sezione.</p>
+
+
+
+<section id="Difese esterne">
+    <h2>Difese esterne</h2>
+    <div style="display:flex; align-items: center;">
+            <div style="text-align: left">
+              <p>
+    Le difese esterne hanno il compito di impedire agli agenti patogeni di penetrare nell’organismo.<br>
+    <br>
+La <strong>cute</strong> rappresenta la prima barriera di difesa: funghi, batteri e virus fanno molta fatica a penetrarla. <br>
+Tuttavia, eventuali ferite o abrasioni possono facilitare l’ingresso dei patogeni aumentando il <br>
+rischio di infezione.<br>
+Sulla pelle vivono batteri e funghi non patogeni, noti come <strong>microbiota cutaneo</strong>. Questi microrganismi <br>
+convivono pacificamente con l’organismo e rappresentano una difesa aspecifica importante, perché<br>
+competono con i patogeni per lo spazio e le risorse nutritive,ostacolandone la crescita.<br>
+<br>
+Un’altra barriera fondamentale è costituita dalle <strong>mucose</strong>, che rivestono strutture esposte <br>
+all’ambiente esterno, come gli occhi, le vie respiratorie, il canale digerente e le vie urinarie e <br>
+riproduttive.<br>
+Le <strong>secrezioni mucose</strong>, come il muco nasale, il liquido lacrimale e la saliva, contengono <strong>lisozima</strong>, <br>
+un enzima che attacca le pareti cellulari dei batteri, indebolendoli o uccidendoli.<br>
+Il <strong>muco nasale</strong> intrappola i microrganismi presenti nell’aria. Se alcuni batteri riescono a superare<br>
+questo primo ostacolo, vengono bloccati nel <strong>muco delle vie respiratorie</strong> e successivamente spinti <br>
+verso il naso o la bocca grazie all’azione delle ciglia vibratili <br>
+I rivestimenti mucosi producono anche <strong>difensine</strong>, piccole molecole peptidiche tossiche per un’ampia <br>
+varietà di patogeni;queste molecole sono prodotte anche dai macrofagi.<br>
+<br>
+Infine, nel <strong>canale digerente</strong>, il succo gastrico, fortemente acido, rappresenta una barriera chimica <br>
+molto efficace, letale per molti batteri che riescono a raggiungere lo stomaco.
+
+
+
+
+            </p>
+          </div>
+          <img src="pelle.png" style="border: 1px solid #2a6eb2; width: 400px; height: 300px; margin-left: 800px; margin-top: 30px; position:absolute;">
+    </div>
 </section>
 
-<section id="sezione2">
-    <h2>Sezione 2</h2>
-    <p>Contenuto della seconda sezione.</p>
+
+
+
+<section id="Difese interne">
+    <h2>Difese interne</h2>
+    <div style="display:flex; align-items: center;">
+            <div style="text-align: left">
+              <p>
+   Le difese interne hanno il compito di eliminare i patogeni che riescono a superare le barriere<br>
+esterne. Queste difese comprendono proteine antimicrobiche e cellule con attività fagocitaria.<br>
+<br>
+Una componente fondamentale è costituita dalle <strong>proteine del complemento</strong>: circa 30<br>
+proteine presenti nel sangue che formano il sistema del complemento. Queste proteine<br>
+agiscono in modo coordinato aderendo ai microbi e inducendo la lisi della loro<br>
+membrana plasmatica. Inoltre, stimolano la risposta infiammatoria, attirando i fagociti nel sito dell’infezione.<br>
+<br>
+Gli <strong>interferoni</strong> sono glicoproteine prodotte in risposta a un’infezione virale. Le cellule infettate<br>
+da un virus rilasciano piccole quantità di interferoni, che stimolano sé stesse e le cellule<br>
+vicine a potenziare le difese contro i virus. Gli interferoni aumentano anche l’attività dei <br>
+lisosomi, che degradano le proteine virali in peptidi più piccoli.<br>
+<br>
+I <strong>fagociti</strong> sono una categoria di globuli bianchi che include granulociti e monociti. Queste<br>
+cellule si muovono liberamente nel sangue e, in presenza di un’infezione, migrano nei<br>
+tessuti colpiti. I granulociti rilasciano defensine, mentre i monociti si trasformano in<br>
+ macrofagi, cellule specializzate nella fagocitosi dei patogeni.<br>
+ <br>
+I <strong>linfociti Natural Killer</strong> (NK) rappresentano un altro importante tipo di difesa innata. Sono in <br>
+grado di riconoscere e distruggere cellule tumorali e cellule infettate da virus, provocandone <br>
+la lisi grazie a proteine chiamate perforine, che perforano la membrana della cellula<br> bersaglio.
+
+
+
+
+            </p>
+          </div>
+          <img src="nk.png" style="border: 1px solid #2a6eb2; width: 400px; height: 300px; margin-left: 800px; margin-top: 30px; position:absolute;">
+    </div>
 </section>
 
-<section id="sezione3">
-    <h2>Sezione 3</h2>
-    <p>Contenuto della sezione 3.</p>
+
+
+
+<section id="Reazione infiammatoria">
+    <h2>Reazione infiammatoria</h2>
+    <div style="display:flex; align-items: center;">
+            <div style="text-align: left">
+              <p>
+                La reazione infiammatoria si attiva in caso di infezioni o danni ai tessuti, con lo scopo di <br>
+contrastare i microrganismi e limitare la diffusione.<br>
+I quattro segni principali dell’infiammazione sono:<strong>rossore,dolore,calore e gonfiore</strong><br>
+<br>
+Nella zona colpita, cellule come i mastociti, i basofili e le piastrine rilasciano <strong>istamina</strong>, una<br>
+sostanza che provoca la <strong>dilatazione</strong> e l’aumento della <strong>permeabilità</strong>dei vasi sanguigni.<br>
+Questo consente ai fagociti di uscire dal sangue e raggiungere rapidamente il sito<br>
+dell’infezione.<br>
+I fagociti inglobano i patogeni e le cellule morte, e rilasciano <strong>citochine</strong>, sostanze <br>
+che regolano la risposta immunitaria e possono indurre la <strong>febbre</strong>. La febbre ha un ruolo<br>
+importante, perché <strong>inibisce la proliferazione</strong> dei patogeni rendendo l’ambiente corporeo<br>
+meno favorevole per loro.<br>
+Nel frattempo, la <strong>fibrina</strong> e altri <strong>fattori cougulanti</strong> presenti nel plasma formano un<br>
+coagulo, che blocca la diffusione dell’infezione e favorisce la riparazione dei tessuti.<br>
+Una volta che la ferita è riparata, i macrofagi che hanno svolto la loro funzione vanno <br>
+incontro a morte cellulare. I resti di cellule morte, detriti e liquidi si accumulano sotto forma di <br>
+<strong>pus</strong>, che viene in seguito eliminato verso l’esterno oppure riassorbito gradualmente <br>
+dall’organismo.
+
+
+
+
+
+
+
+
+
+
+
+
+            </p>
+          </div>
+          <img src="risposta_infiammatoria.png" style="border: 1px solid #2a6eb2; width: 400px; height: 300px; margin-left: 800px; margin-top: -10px; position:absolute;">
+    </div>
 </section>
+
+
+
 
 <script>
     function scrollToSection(id) {
