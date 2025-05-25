@@ -1,4 +1,5 @@
 HomePage (Mam)
+    - Logo (Leo) COMPLETED
     - Base COMPLETED
     - fare i 5 pulsanti (COMPLETED)
     - Suddivisone pulsanti (Mappa / Sottopagina) (COMPLETED)
@@ -12,21 +13,22 @@ HomePage (Mam)
 
 Mappe (Leo)
     - Template COMPLETED
-    - Linfatico COMPLETED
-    - Cellule COMPLETED
+    - Linfatico
+    - Cellule
     - Immunità adattiva
     - Immunità innata
     - Malattie e Vaccini
 
-    - Fix crash
-
 Sottopagine (Leo)
     - Template COMPLETED
     - Base COMPLETED
-    - Indice
+    - Indice COMPLETED
+    - Tendina
+    - Collegamenti
 
-Contenuto Sottopagine
-    - Suddivisione
+Contenuto Sottopagine (Mati / Monte)
+    - Suddivisione COMPLETED
+
     - Linfatico
     - Cellule
     - Immunità adattiva

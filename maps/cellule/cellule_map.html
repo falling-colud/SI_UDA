@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Overlay with Hover Effect</title>
+    <link rel="stylesheet" href="../maps.css" />
+    <style>
+        .hover-zone {
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          background-color: rgba(0, 0, 0, 0.3); /* Red translucent box */
+          z-index: 3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="cellule_bg.png" alt="Base Image" class="base-image">
+
+    <img src="cellule_b.png" alt="Overlay Image" class="overlay-image" id="overlay1">
+    <div class="hover-zone"
+         style="top: 44%; left: 14%;"
+         onmouseover="showPopup(event, 'overlay1')"
+         onmouseout="hidePopup('overlay1')"
+         onclick="window.location.href='https://example.com'">
+    </div>
+    <div class="popup" id="popup-overlay1"
+         style="top: 44%; left: 14%;">
+        <strong>Cellule B</strong><br>
+        Producono anticorpi per neutralizzare patogeni e attivano la risposta immunitaria.
+    </div>
+
+    <img src="cellule_dentritiche.png" alt="Overlay Image" class="overlay-image" id="overlay2">
+    <div class="hover-zone"
+         style="top: 44%; left: 85%;"
+         onmouseover="showPopup(event, 'overlay2')"
+         onmouseout="hidePopup('overlay2')"
+         onclick="window.location.href='https://example.com'">
+    </div>
+    <div class="popup" id="popup-overlay2"
+         style="top: 44%; left: 50%;">
+        <strong>Cellule Dendritiche</strong><br>
+        Presentano antigeni ai linfociti T, avviando la risposta immunitaria adattativa.
+    </div>
+
+    <img src="cellule_killer.png" alt="Overlay Image" class="overlay-image" id="overlay3">
+    <div class="hover-zone"
+         style="top: 72%; left: 77%;"
+         onmouseover="showPopup(event, 'overlay3')"
+         onmouseout="hidePopup('overlay3')"
+         onclick="window.location.href='https://example.com'">
+    </div>
+    <div class="popup" id="popup-overlay3"
+         style="top: 72%; left: 50%;">
+        <strong>Cellule Killer</strong><br>
+        Distruggono cellule infette o tumorali tramite rilascio di enzimi citotossici.
+    </div>
+
+    <img src="cellule_t.png" alt="Overlay Image" class="overlay-image" id="overlay4">
+    <div class="hover-zone"
+         style="top: 44%; left: 31.3%;"
+         onmouseover="showPopup(event, 'overlay4')"
+         onmouseout="hidePopup('overlay4')"
+         onclick="window.location.href='https://example.com'">
+    </div>
+    <div class="popup" id="popup-overlay4"
+         style="top: 44%; left: 31.3%;">
+        <strong>Cellule T</strong><br>
+        Coordinano la risposta immunitaria e attaccano cellule infette o anormali.
+    </div>
+
+    <img src="esoinofili.png" alt="Overlay Image" class="overlay-image" id="overlay5">
+    <div class="hover-zone"
+         style="top: 71.5%; left: 21.3%;"
+         onmouseover="showPopup(event, 'overlay5')"
+         onmouseout="hidePopup('overlay5')"
+         onclick="window.location.href='https://example.com'">
+    </div>
+    <div class="popup" id="popup-overlay5"
+         style="top: 72%; left: 21.3%;">
+        <strong>Esoinofili</strong><br>
+        Combattono parassiti e contribuiscono alle reazioni allergiche.
+    </div>
+
+    <img src="fibroplasti.png" alt="Overlay Image" class="overlay-image" id="overlay6">
+    <div class="hover-zone"
+         style="top: 44%; left: 67.3%;"
+         onmouseover="showPopup(event, 'overlay6')"
+         onmouseout="hidePopup('overlay6')"
+         onclick="window.location.href='https://example.com'">
+    </div>
+    <div class="popup" id="popup-overlay6"
+         style="top: 44%; left: 67.3%;">
+        <strong>Fibroplasti</strong><br>
+        Producono collagene e altre fibre per la guarigione dei tessuti.
+    </div>
+
+    <img src="macrofagi.png" alt="Overlay Image" class="overlay-image" id="overlay7">
+    <div class="hover-zone"
+         style="top: 44%; left: 49.3%;"
+         onmouseover="showPopup(event, 'overlay7')"
+         onmouseout="hidePopup('overlay7')"
+         onclick="window.location.href='https://example.com'">
+    </div>
+    <div class="popup" id="popup-overlay7"
+         style="top: 44%; left: 49.3%;">
+        <strong>Macrofagi</strong><br>
+        Fagocitano patogeni e detriti cellulari; regolano l'infiammazione.
+    </div>
+
+    <img src="neutrofili.png" alt="Overlay Image" class="overlay-image" id="overlay8">
+    <div class="hover-zone"
+         style="top: 72%; left: 58.3%;"
+         onmouseover="showPopup(event, 'overlay8')"
+         onmouseout="hidePopup('overlay8')"
+         onclick="window.location.href='https://example.com'">
+    </div>
+    <div class="popup" id="popup-overlay8"
+         style="top: 72%; left: 58.3%;">
+        <strong>Neutrofili</strong><br>
+        Prime cellule a rispondere alle infezioni; distruggono i patogeni con enzimi.
+    </div>
+
+    <img src="basofili.png" alt="Overlay Image" class="overlay-image" id="overlay9">
+    <div class="hover-zone"
+         style="top: 72%; left: 39.5%;"
+         onmouseover="showPopup(event, 'overlay9')"
+         onmouseout="hidePopup('overlay9')"
+         onclick="window.location.href='https://example.com'">
+    </div>
+    <div class="popup" id="popup-overlay9"
+         style="top: 72%; left: 39.5%;">
+        <strong>Basofili</strong><br>
+        Rilasciano istamina e mediano risposte allergiche e infiammatorie.
+    </div>
+
+</div>
+
+
+
+<script>
+    function showPopup(event, overlayId, popupId, scaling = 1.2) {
+      const overlay = document.getElementById(overlayId);
+      const popup = document.getElementById("popup-" + overlayId);
+      const zone = event.currentTarget;
+
+      if (!overlay || !popup || !zone) {
+        console.warn("Invalid overlay or popup or trigger zone.");
+        return;
+      }
+
+      // Default scaling fallback
+      const scaleValue = typeof scaling === 'number' && scaling > 0 ? scaling : 1;
+
+      // Get bounding rectangles
+      const zoneRect = zone.getBoundingClientRect();
+      const containerRect = zone.parentElement.getBoundingClientRect();
+
+      // Calculate transform origin relative to container
+      const centerX = zoneRect.left + zoneRect.width / 2 - containerRect.left;
+      const centerY = zoneRect.top + zoneRect.height / 2 - containerRect.top;
+
+      // Apply overlay styles
+      overlay.style.opacity = '1';
+      overlay.style.transformOrigin = `${centerX}px ${centerY}px`;
+      overlay.style.transform = `scale(${scaleValue})`;
+      overlay.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+
+      // Show popup
+      popup.style.display = 'block';
+    }
+    function hidePopup(overlayId) {
+      const overlay = document.getElementById(overlayId);
+      const popup = document.getElementById("popup-" + overlayId);
+
+      if (overlay) {
+        overlay.style.opacity = '0';
+        overlay.style.transform = 'scale(1)';
+      }
+      if (popup) {
+        popup.style.display = 'none';
+      }
+    }
+</script>
+
+</body>
+</html>

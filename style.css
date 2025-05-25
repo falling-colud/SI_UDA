@@ -2,6 +2,7 @@
 
     /* h1 variabili */
     --h1color:rgb(255, 255, 255);
+ 
     --h1y : 200px;
 
     /* start - variabili dei pulsanti della pagina centrale */
@@ -79,6 +80,76 @@ a{
 }
 
 h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5em;
+    color: rgb(255, 218, 169);
+    text-align: center ;
+    position: relative;
+    top: 300px;
+    left: 500px;
+}
+
+
+
+
+h3{
+    color: white;
+    font-size: 1em;
+}
+
+/* ------------------------------------------------------------------- */
+
+/*  Start - Pulsanti della Pagina Centrale  */
+
+.sistema_linfatico {
+    height: var(--height_Button);
+    width: var(--width_Button);
+    background: var(--gradiantcolor1);
+    background: var(--gradiantcolor2);
+    color: wheat;
+    text-align: center;
+    border-radius: 10%;
+    position: relative;
+    top: var(--postionyButton);
+    left: var(--postionxButton);
+    display: inline-block;
+    margin-left: 50px;
+    margin-bottom: 150px;
+    transition: 0.5s;
+    
+}
+
+h4.sistema_linfatico{
+    position: absolute;   
+    left: 60px;
+    bottom: 32px;
+}
+
+
+ .sistema_immunitario{
+    height: var(--height_Button);
+    width: var(--width_Button);
+    /* background-color: rgb(26, 0, 172); */
+    background: var(--gradiantcolor1);
+    background: var(--gradiantcolor2);
+    color: wheat;
+    text-align: center;
+    border-radius: 10%;
+    position: relative;
+    top: var(--postionyButton);
+    left: var(--postionxButton);
+    display: inline-block;
+    margin-left: 100px;
+    margin-bottom: 150px;
+    transition: 0.5s;
+}
+
+
+
+.italiano{
+    height: var(--height_Button);
+    width: var(--width_Button);
+    /* background-color: rgb(26, 0, 172); */
     margin: auto;
     color: var(--h1color);
     background: -webkit-linear-gradient(#9e0404, #ab98ff);
@@ -162,6 +233,8 @@ h1{
     transition: 1.2s;
     border-radius: 3px;
     opacity: 0%;
+    text-decoration: none;
+
     
 }
 
@@ -289,7 +362,7 @@ h1{
     height: 230px;
     background-color: rgb(12, 8, 255);
     background: rgb(237,255,88);
-    background: radial-gradient(circle, rgba(3, 0, 153, 0.363) 0%, rgba(0,52,107,0.053658963585434205) 100%);
+    background: radial-gradient(circle, rgba(98, 166, 255, 0.363) 0%, rgba(73, 158, 255, 0.054) 100%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: solid rgb(255, 255, 255) 0.1px;
 }
