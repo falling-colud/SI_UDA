@@ -6,16 +6,12 @@
     <link rel="stylesheet" href="../maps.css" />
     <style>
         .hover-zone {
-          position: absolute;
-          width: 200px;
-          height: 200px;
-          border-radius: 50%;
-          background-color: rgba(0, 0, 0, 0.3); /* Red translucent box */
-          z-index: 3;
+          background-color: rgba(0, 0, 0, 0); /* Red translucent box */
         }
     </style>
 </head>
-<body>
+<body class="cellule_map">
+
 
 <div class="container">
     <img src="cellule_bg.png" alt="Base Image" class="base-image">
@@ -41,7 +37,7 @@
          onclick="window.location.href='https://example.com'">
     </div>
     <div class="popup" id="popup-overlay2"
-         style="top: 44%; left: 50%;">
+         style="top: 44%; left: 46%;">
         <strong>Cellule Dendritiche</strong><br>
         Presentano antigeni ai linfociti T, avviando la risposta immunitaria adattativa.
     </div>
@@ -54,7 +50,7 @@
          onclick="window.location.href='https://example.com'">
     </div>
     <div class="popup" id="popup-overlay3"
-         style="top: 72%; left: 50%;">
+         style="top: 72%; left: 38%;">
         <strong>Cellule Killer</strong><br>
         Distruggono cellule infette o tumorali tramite rilascio di enzimi citotossici.
     </div>
@@ -177,7 +173,6 @@
       const popup = document.getElementById("popup-" + overlayId);
 
       if (overlay) {
-        overlay.style.opacity = '0';
         overlay.style.transform = 'scale(1)';
       }
       if (popup) {

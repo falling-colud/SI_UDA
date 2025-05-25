@@ -53,4 +53,8 @@ html {
      z-index: 4;
    }
 
+   .cellule_map .hover-zone {
+    background-color: rgba(0, 0, 0, 0); /* Red translucent box */
+   }
+
 }
