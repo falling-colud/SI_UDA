@@ -2,16 +2,33 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vaccini e Malattie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vaccini e Malattie del Sistema Linfatico</title>
     <link rel="stylesheet" href="subpages.css" />
+    <style>
+        .section-content {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        .section-content p {
+            flex: 1;
+        }
+        .section-content img {
+            max-width: 300px;
+            height: auto;
+            order: 2;
+            align-self: flex-start;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
 <header>
-    <a href="home.html"><img src="logo.png" alt="Logo" /></a>
+    <a href="../index.html"><img src="../logo.png" alt="Logo" /></a>
     <nav>
         <button onclick="location.href='sistema_linfatico.html'">Sistema Linfatico</button>
-        <button onclick="location.href='le_cellule.html'">Vaccini e Malattie</button>
+        <button onclick="location.href='le_cellule.html'">Le Cellule</button>
         <button onclick="location.href='immunita_innata.html'">Immunità Innata</button>
         <button onclick="location.href='immunita_adattiva.html'">Immunità Adattiva</button>
         <button class="active">Vaccini e Malattie</button>
@@ -19,44 +36,87 @@
 </header>
 
 <div class="page-title-bar">
-    <h1>Sistema Immunitario - <span class="subtitle-highlight">Vaccini e Malattie</span></h1>
+    <h1>Sistema Linfatico - <span class="subtitle-highlight">Malattie e Vaccini</span></h1>
     <select onchange="scrollToSection(this.value)">
         <option value="intro">Introduzione</option>
-        <option value="sezione1">Sezione 1</option>
-        <option value="sezione2">Sezione 2</option>
+        <option value="malattie-linfatico">Malattie del Sistema Linfatico</option>
+        <option value="linfomi">Linfomi</option>
+        <option value="linfedema">Linfedema</option>
+        <option value="vaccini">Tipi di Vaccini</option>
+        <option value="funzionamento-vaccini">Come Funzionano i Vaccini</option>
     </select>
 </div>
 
 <section id="intro">
     <h2>Introduzione</h2>
-    <p>Questa è l'introduzione alVaccini e Malattie...</p>
+    <p>Il sistema linfatico è essenziale per il funzionamento del sistema immunitario e per il mantenimento dell’equilibrio dei fluidi corporei. Diverse malattie possono colpire questo sistema, compromettendo la sua funzione e la salute generale. I vaccini rappresentano uno strumento chiave per prevenire malattie infettive e supportare la risposta immunitaria.</p>
 </section>
 
 <section id="indice" class="indice">
     <h2>Indice</h2>
     <ul>
         <li onclick="scrollToSection('intro')">Introduzione</li>
-        <li onclick="scrollToSection('sezione1')">Sezione 1</li>
-        <li onclick="scrollToSection('sezione2')">Sezione 2</li>
+        <li onclick="scrollToSection('malattie-linfatico')">Malattie del Sistema Linfatico</li>
+        <li onclick="scrollToSection('linfomi')">Linfomi</li>
+        <li onclick="scrollToSection('linfedema')">Linfedema</li>
+        <li onclick="scrollToSection('vaccini')">Tipi di Vaccini</li>
+        <li onclick="scrollToSection('funzionamento-vaccini')">Come Funzionano i Vaccini</li>
     </ul>
 </section>
 
-<section id="sezione1">
-    <h2>Sezione 1</h2>
-    <p>Contenuto della prima sezione.</p>
+<section id="malattie-linfatico">
+    <h2>Malattie del Sistema Linfatico</h2>
+    <div class="section-content">
+        <p>Il sistema linfatico può essere colpito da diverse patologie che ne alterano il funzionamento. Tra queste ci sono infezioni, tumori e disturbi legati al drenaggio linfatico. Il sistema linfatico è inoltre coinvolto in molte malattie autoimmuni e condizioni infiammatorie.</p>
+        <img src="../img/malattie_sistema_linfatico.png" alt="Malattie del sistema linfatico" />
+    </div>
 </section>
 
-<section id="sezione2">
-    <h2>Sezione 2</h2>
-    <p>Contenuto della seconda sezione.</p>
+<section id="linfomi">
+    <h2>Linfomi</h2>
+    <div class="section-content">
+        <p>I linfomi sono tumori maligni che originano dai linfociti, cellule fondamentali del sistema immunitario presenti nei linfonodi e in altri tessuti linfatici. Si dividono principalmente in linfoma di Hodgkin e linfomi non-Hodgkin. Queste neoplasie compromettono la capacità del sistema linfatico di combattere infezioni e possono causare gonfiore dei linfonodi, febbre e perdita di peso.</p>
+        <img src="../img/linfoma.png" alt="Linfoma" />
+    </div>
+</section>
+
+<section id="linfedema">
+    <h2>Linfedema</h2>
+    <div class="section-content">
+        <p>Il linfedema è una condizione caratterizzata da un accumulo anomalo di linfa nei tessuti, spesso causato da un’ostruzione o danneggiamento dei vasi linfatici. Può essere primario (congenito) o secondario, ad esempio dopo interventi chirurgici o radioterapie. Il linfedema provoca gonfiore, dolore e può aumentare il rischio di infezioni.</p>
+        <img src="../img/linfedema.png" alt="Linfedema" />
+    </div>
+</section>
+
+<section id="vaccini">
+    <h2>Tipi di Vaccini</h2>
+    <div class="section-content">
+        <p>I vaccini si classificano in diverse categorie, ognuna con un meccanismo specifico per stimolare il sistema immunitario:</p>
+        <ul>
+            <li><strong>Vaccini a virus/batteri attenuati:</strong> contengono patogeni vivi ma indeboliti, capaci di attivare una risposta immunitaria robusta.</li>
+            <li><strong>Vaccini a virus/batteri inattivati:</strong> utilizzano agenti patogeni uccisi, sicuri ma meno potenti.</li>
+            <li><strong>Vaccini a subunità:</strong> comprendono solo componenti specifici del patogeno, come proteine o polisaccaridi.</li>
+            <li><strong>Vaccini a mRNA:</strong> introducono materiale genetico che induce le cellule a produrre l’antigene patogeno.</li>
+            <li><strong>Vaccini vettoriali:</strong> utilizzano virus modificati come vettori per trasportare materiale genetico.</li>
+        </ul>
+        <img src="../img/tipi_vaccini.png" alt="Tipi di vaccini" />
+    </div>
+</section>
+
+<section id="funzionamento-vaccini">
+    <h2>Come Funzionano i Vaccini</h2>
+    <div class="section-content">
+        <p>I vaccini simulano un’infezione, attivando il sistema immunitario senza causare malattia. Questo processo stimola la produzione di anticorpi e la formazione di cellule della memoria immunitaria, che permettono una risposta più rapida ed efficace in caso di incontro reale con il patogeno. La memoria immunitaria è fondamentale per la prevenzione a lungo termine delle infezioni.</p>
+        <img src="../img/funzionamento_vaccini.png" alt="Funzionamento dei vaccini" />
+    </div>
 </section>
 
 <script>
     function scrollToSection(id) {
-      const section = document.getElementById(id);
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-      }
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
     }
 </script>
 </body>

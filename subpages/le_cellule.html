@@ -3,155 +3,219 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Le Cellule</title>
+    <title>Le Cellule del Sistema Immunitario</title>
     <link rel="stylesheet" href="subpages.css" />
-    <style>
-        p.text{
-        text-align: left;
-        font-size: 14px;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-      }
-    </style>
 </head>
 <body>
 <header>
-    <a href="home.html"><img src="logo.png" alt="Logo" /></a>
+    <a href="../index.html"><img src="../logo.png" alt="Logo" /></a>
     <nav>
         <button onclick="location.href='sistema_linfatico.html'">Sistema Linfatico</button>
-        <button onclick="location.href='le_cellule.html'">Le Cellule</button>
+        <button class="active">Le Cellule</button>
         <button onclick="location.href='immunita_innata.html'">Immunità Innata</button>
         <button onclick="location.href='immunita_adattiva.html'">Immunità Adattiva</button>
-        <button onclick="location.href='placeholder1.html'">Vaccini e patologie</button>
+        <button onclick="location.href='vaccini_malattie.html'">Vaccini e patologie</button>
     </nav>
 </header>
-
-
-
 
 <div class="page-title-bar">
     <h1>Sistema Immunitario - <span class="subtitle-highlight">Le Cellule</span></h1>
     <select onchange="scrollToSection(this.value)">
-        <option value="Granulociti">Granulociti</option>
-        <option value="Monociti">Monociti</option>
-        <option value="Linfociti">Linfociti</option>
+        <option value="Intro">Introduzione</option>
+        <option value="CelluleB">Cellule B</option>
+        <option value="CelluleT">Cellule T</option>
+        <option value="Macrofagi">Macrofagi</option>
         <option value="Fibroblasti">Fibroblasti</option>
+        <option value="Dendritiche">Cellule Dendritiche</option>
+        <option value="Eosinofili">Eosinofili</option>
+        <option value="Basofili">Basofili</option>
+        <option value="Neutrofili">Neutrofili</option>
+        <option value="NaturalKiller">Cellule Natural Killer</option>
     </select>
 </div>
 
+<section id="Intro">
+    <h2>Introduzione</h2>
+    <p>
+        Il sistema immunitario è composto da una vasta rete di cellule e molecole che lavorano insieme per proteggere l'organismo da agenti patogeni come batteri, virus, funghi e parassiti. Ogni tipo cellulare ha un ruolo specifico nel riconoscimento, risposta e memoria immunitaria. Questa pagina esplora le principali cellule immunitarie coinvolte nella difesa dell'organismo.
+    </p>
+</section>
 
+<!-- Nuova sezione Indice -->
+<section id="indice" class="indice">
+    <h2>Indice</h2>
+    <ul>
+        <li onclick="scrollToSection('CelluleB')">Cellule B</li>
+        <li onclick="scrollToSection('CelluleT')">Cellule T</li>
+        <li onclick="scrollToSection('Macrofagi')">Macrofagi</li>
+        <li onclick="scrollToSection('Fibroblasti')">Fibroblasti</li>
+        <li onclick="scrollToSection('Dendritiche')">Cellule Dendritiche</li>
+        <li onclick="scrollToSection('Eosinofili')">Eosinofili</li>
+        <li onclick="scrollToSection('Basofili')">Basofili</li>
+        <li onclick="scrollToSection('Neutrofili')">Neutrofili</li>
+        <li onclick="scrollToSection('NaturalKiller')">Cellule Natural Killer</li>
+    </ul>
+</section>
 
-
-<section id="Granulociti">
-    <h2>Granulociti</h2>
-    <div style="display:flex; align-items: center;">
-            <div style="text-align: left">
-              <p>
-               I granulociti sono globuli bianchi caratterizzati dalla presenza di granuli nel <br>
-               citoplasma e da un nucleo diviso in più lobi.<br>
-               I granulociti si trovano nel midollo osseo,dove hanno origine,nel sangue e nei tessuti;<br>
-               si dividono in tre tipologie:eosinofili,basofili e neutrofili.<br>
-              </p>
-              <ul>
-                <li><strong>Eosinofili</strong>:si trovano nel tratto digerente e respiratorio ,<br>
-                    nel tessuto connettivo cutaneo ed intervengono nelle<br>
-                    infestazioni di parassiti e nelle reazioni allergiche.</li>
-                <li><strong>Basofili</strong>:si trovano nel sangue e nei tessuti ed intervengono<br>
-                    nelle reazioni allaergiche dove rilasciano eparina ed<br>
-                    istamina.</li>
-                <li><strong>Neutrofili</strong>:si trovano nel sangue ed intervengono nelle infiammazioni<br>
-                     acute fagotando i patogeni e rilasciando mediatori <br>
-                     infiammatori.</li>
-              </ul>
-          </div>
-          <img src="granulociti.png" style="border: 1px solid #2a6eb2; width: 400px; height: 300px; margin-left: 800px; margin-top: -10px; position:absolute;">
+<section id="CelluleB">
+    <h2>Cellule B</h2>
+    <div class="section-content">
+        <div>
+            <p>
+                Le cellule B sono linfociti coinvolti nella risposta immunitaria umorale. Riconoscono antigeni specifici attraverso recettori di membrana e, una volta attivate, si differenziano in plasmacellule che producono anticorpi.
+            </p>
+            <ul>
+                <li>Prodotte nel midollo osseo e attive nei linfonodi e nella milza.</li>
+                <li>Generano memoria immunitaria specifica a lungo termine.</li>
+                <li>Collaborano con i linfociti T helper per una risposta più efficace.</li>
+            </ul>
+        </div>
+        <img src="linfociti_b.png" alt="Cellule B">
     </div>
 </section>
 
-
-
-
-<section id="Monociti">
-    <h2>Monociti</h2>
-    <div style="display:flex; align-items: center;">
-            <div style="text-align: left">
-              <p>
-              I monociti sono un particolare tipo di globuli bianchi che circolano<br>
-              liberamente nel sangue e, successivamente, migrano nei tessuti dove<br>
-              aumentano di dimensione e si differenziano in macrofagi e cellule<br>
-              dendritiche.<br>
-              </p>
-              <ul>
-                <li><strong>Cellule dendritiche</strong>:sono cellule tessutali con la funzione <br>
-                di riconoscere,fagocitare ed eliminare i componenti non<br>
-                self conservando gli antigeni.<br>
-                La principale funzione delle cellule dendritiche è, una volta eliminato il <br>
-                patogeno e prelevato l’antigene,quella di trasportarlo agli organi linfoidi <br>
-                secondari e di presentare gli antigeni ai linfociti.</li>
-                <li><strong>Macrofagi</strong>:intervengono nella fase tardiva dell’infiammazione <br>
-                acuta,nell’infiammazione cronica,nelleinfezioni parassitarie<br>
-                e nelle allergie  attraverso la fagocitosi dei patogeni e la <br>
-                secrezione di mediatori infiammatori.<br></li>
-              </ul>
-          </div>
-           <img src="monociti.png" style="border: 1px solid #2a6eb2; width: 400px; height: 300px; margin-left: 800px; margin-top: -10px; position:absolute;">
+<section id="CelluleT">
+    <h2>Cellule T</h2>
+    <div class="section-content">
+        <div>
+            <p>
+                I linfociti T svolgono un ruolo centrale nella risposta immunitaria cellulare. Maturano nel timo e si suddividono in diverse classi con funzioni distinte.
+            </p>
+            <ul>
+                <li><strong>T Helper (CD4+)</strong>: attivano cellule B, T e macrofagi.</li>
+                <li><strong>T citotossiche (CD8+)</strong>: distruggono cellule infette o tumorali.</li>
+                <li><strong>T regolatorie</strong>: modulano la risposta immunitaria per prevenire reazioni autoimmuni.</li>
+            </ul>
+        </div>
+        <img src="linfociti_t.png" alt="Cellule T">
     </div>
 </section>
 
-
-
-
-<section id="Linfociti">
-    <h2>Lnfociti</h2>
-    <div style="display:flex; align-items: center;">
-            <div style="text-align: left">
-              <p>
-              I linfociti sono un tipo di globuli bianchi con la funzione di mantenere il <br>
-              sistema immunitario in grado di rispondere in modo efficace alle minacce.<br>
-              I linfociti vengono prodotti nel midollo osseo e maturano negli organi linfoidi.<br>
-              Esistono tre tipi di linfociti: linfociti B, linfociti T e cellule Natural Killer.
-              </p>
-              <ul>
-                <li><strong>Linfociti T</strong>:Sono responsabili della risposta immunitaria cellulare<br>
-                contro cellule infettate da virus, batteri e cellule tumorali. Inoltre, questi <br>
-                linfociti stimolano la produzione di anticorpi da parte dei linfociti B e<br>
-                favoriscono la fagocitosi.</li>
-                <li><strong>Linfociti B</strong>:Sono capaci di riconoscere un antigene specifico e,<br>
-                una volta entrati in contatto con il patogeno, generano una risposta immunitaria <br>
-                umorale. Infatti, sono in grado di produrre anticorpi che si legano ai patogeni,<br>
-                rendendoli riconoscibili dai fagociti, i quali li eliminano.<br></li>
-                <li><strong>Cellule natural killer</strong>:sono in grado di riconoscere ed uccidere cellule <br>
-                    infettate da virus o cellule tumorali.
-              </ul>
-          </div>
-           <img src="linfociti.png" style="border: 1px solid #2a6eb2; width: 400px; height: 300px; margin-left: 800px; margin-top: -10px; position:absolute;">
+<section id="Macrofagi">
+    <h2>Macrofagi</h2>
+    <div class="section-content">
+        <div>
+            <p>
+                I macrofagi derivano dai monociti e sono cellule fagocitarie specializzate nella rimozione di patogeni, cellule morte e detriti cellulari. Sono attivi nella fase cronica dell'infiammazione.
+            </p>
+            <ul>
+                <li>Rilasciano citochine pro-infiammatorie e anti-infiammatorie.</li>
+                <li>Presentano antigeni ai linfociti T, favorendo la risposta adattativa.</li>
+                <li>Contribuiscono alla riparazione tissutale.</li>
+            </ul>
+        </div>
+        <img src="macrofagi.png" alt="Macrofagi">
     </div>
 </section>
+
 <section id="Fibroblasti">
     <h2>Fibroblasti</h2>
-    <div style="display:flex; align-items: center;">
-            <div style="text-align: left">
-              <p >
-                I <strong>fibroblasti</strong> sono cellule residenti del tessuto connettivo, localizzate principalmente nel <br>
-                connettivo lasso e in quello denso. Sono responsabili della produzione dei componenti della <br>
-                matrice extracellulare, tra cui collagene, elastina e proteoglicani. Svolgono un ruolo<br>
-                fondamentale nella riparazione delle ferite e nella secrezione di fattori di crescita e citochine.<br>
-              </p>
-          </div>
-           <img src="fibroblasti.png" style="border: 1px solid #2a6eb2; width: 400px; height: 150px; margin-left: 800px; margin-top: -10px;margin-bottom: 50px; position:absolute;">
+    <div class="section-content">
+        <div>
+            <p>
+                I fibroblasti sono cellule non immunitarie del tessuto connettivo, fondamentali per la produzione della matrice extracellulare. Svolgono un ruolo indiretto nella modulazione immunitaria.
+            </p>
+            <ul>
+                <li>Producono collagene, elastina e proteoglicani.</li>
+                <li>Rilasciano citochine e fattori di crescita.</li>
+                <li>Coinvolti nella cicatrizzazione e nell’infiammazione cronica.</li>
+            </ul>
+        </div>
+        <img src="fibroblasti.png" alt="Fibroblasti">
     </div>
 </section>
 
+<section id="Dendritiche">
+    <h2>Cellule Dendritiche</h2>
+    <div class="section-content">
+        <div>
+            <p>
+                Le cellule dendritiche sono le principali cellule presentatrici di antigeni. Riconoscono i patogeni, li fagocitano e migrano verso i linfonodi per attivare i linfociti T.
+            </p>
+            <ul>
+                <li>Presentano antigeni tramite MHC alle cellule T naive.</li>
+                <li>Collegano immunità innata e adattativa.</li>
+                <li>Alcune sottopopolazioni includono le cellule dendritiche plasmacitoidi e mieloidi.</li>
+            </ul>
+        </div>
+        <img src="cellule_dendritiche.png" alt="Cellule Dendritiche">
+    </div>
+</section>
 
+<section id="Eosinofili">
+    <h2>Eosinofili</h2>
+    <div class="section-content">
+        <div>
+            <p>
+                Gli eosinofili sono granulociti coinvolti nella difesa contro parassiti e nelle reazioni allergiche. Contengono granuli che rilasciano sostanze tossiche per i patogeni.
+            </p>
+            <ul>
+                <li>Presenti in elevata quantità nei tessuti mucosi.</li>
+                <li>Rilasciano proteine cationiche, perossidasi ed enzimi litici.</li>
+                <li>Modulano l'infiammazione tramite il rilascio di citochine.</li>
+            </ul>
+        </div>
+        <img src="eosinofili.png" alt="Eosinofili">
+    </div>
+</section>
 
+<section id="Basofili">
+    <h2>Basofili</h2>
+    <div class="section-content">
+        <div>
+            <p>
+                I basofili sono i meno comuni tra i granulociti, ma essenziali nelle risposte allergiche. Contengono granuli ricchi di istamina ed eparina.
+            </p>
+            <ul>
+                <li>Attivati da IgE nella risposta allergica immediata.</li>
+                <li>Contribuiscono alla vasodilatazione e alla chemiotassi.</li>
+                <li>Collaborano con i mastociti nei tessuti.</li>
+            </ul>
+        </div>
+        <img src="basofili.png" alt="Basofili">
+    </div>
+</section>
 
+<section id="Neutrofili">
+    <h2>Neutrofili</h2>
+    <div class="section-content">
+        <div>
+            <p>
+                I neutrofili sono i granulociti più abbondanti nel sangue. Sono i primi a intervenire durante le infezioni acute, eliminando patogeni per fagocitosi.
+            </p>
+            <ul>
+                <li>Rilasciano enzimi e mediatori infiammatori.</li>
+                <li>Formano NETs (trappole extracellulare di neutrofili).</li>
+                <li>Vivono pochi giorni ma hanno un ruolo chiave nella difesa immediata.</li>
+            </ul>
+        </div>
+        <img src="neutrofili.png" alt="Neutrofili">
+    </div>
+</section>
 
+<section id="NaturalKiller">
+    <h2>Cellule Natural Killer</h2>
+    <div class="section-content">
+        <div>
+            <p>
+                Le cellule NK fanno parte dell’immunità innata. Sono in grado di uccidere cellule infettate da virus o trasformate in cellule tumorali senza bisogno di sensibilizzazione antigenica.
+            </p>
+            <ul>
+                <li>Riconoscono cellule con espressione anomala di MHC-I.</li>
+                <li>Rilasciano perforine e granzimi per indurre apoptosi.</li>
+                <li>Collaborano con anticorpi nella citotossicità cellulo-mediata (ADCC).</li>
+            </ul>
+        </div>
+        <img src="natural_killer.png" alt="Cellule Natural Killer">
+    </div>
+</section>
 
 <script>
     function scrollToSection(id) {
-      const section = document.getElementById(id);
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-      }
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
     }
 </script>
 </body>

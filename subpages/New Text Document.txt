@@ -15,7 +15,7 @@
 </head>
 <body>
 <header>
-    <a href="home.html"><img src="logo.png" alt="Logo" /></a>
+    <a href="../index.html"><img src="logo.png" alt="Logo" /></a>
     <nav>
         <button onclick="location.href='sistema_linfatico.html'">Sistema Linfatico</button>
         <button onclick="location.href='le_cellule.html'">Le Cellule</button>

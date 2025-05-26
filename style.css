@@ -2,7 +2,7 @@
 
     /* h1 variabili */
     --h1color:rgb(255, 255, 255);
- 
+
     --h1y : 200px;
 
     /* start - variabili dei pulsanti della pagina centrale */
@@ -13,23 +13,23 @@
     --d_between: 300px;
     --gradiantcolor1:  #020024;;
 
-    --gradiantcolor2:linear-gradient(180deg,rgba(241, 239, 255, 0.63) 0%, rgba(236, 234, 255, 0.527) 30%, rgba(232, 235, 255, 0.267) 100%);
+    --gradiantcolor2:linear-gradient(180deg,rgba(11, 66, 11, 0.63) 0%, rgba(22, 88, 22, 0.527) 30%, rgba(33, 120, 33, 0.267) 100%);
 
     /* Mappe conttuale Pulsanti */
     --mc_color1: #3068d1;
     --mc_color2: linear-gradient(181deg, rgba(0, 129, 86, 0) 0%, rgba(0, 46, 146, 0.514) 30%, rgba(14, 204, 115, 0) 100%);
-    
+
 
     /* TEXT Pulsanti*/
     --subtitle_x: auto;
-    --subtitle_y:55px; 
+    --subtitle_y:55px;
     /* End : Text Pulsanti */
 
-    
+
     /* End - variabili dei pulsanti della pagina centrale */
 
     /* Blocchi */
-    
+
     /* Blocco 1 */
     --Position_B1:800px;
 
@@ -37,7 +37,7 @@
     --height_sections_linf : var(1900px);
     --width_sections_linf  : var(1800px);
 
-    /* End - Variabili delle sezioni */    
+    /* End - Variabili delle sezioni */
 
     /* Mappe Concettuale */
 
@@ -70,13 +70,13 @@ html{
 
 body{
 
-   background-color: #0f0f0f; 
+   background-color: #0f0f0f;
 
 }
 
 a{
     text-decoration: none;
-    color: wheat;
+    color: white;
 }
 
 h1{
@@ -106,7 +106,7 @@ h3{
     width: var(--width_Button);
     background: var(--gradiantcolor1);
     background: var(--gradiantcolor2);
-    color: wheat;
+    color: white;
     text-align: center;
     border-radius: 10%;
     position: relative;
@@ -116,11 +116,12 @@ h3{
     margin-left: 50px;
     margin-bottom: 150px;
     transition: 0.5s;
-    
+
+
 }
 
 h4.sistema_linfatico{
-    position: absolute;   
+    position: absolute;
     left: 60px;
     bottom: 32px;
 }
@@ -132,7 +133,7 @@ h4.sistema_linfatico{
     /* background-color: rgb(26, 0, 172); */
     background: var(--gradiantcolor1);
     background: var(--gradiantcolor2);
-    color: wheat;
+    color: white;
     text-align: center;
     border-radius: 10%;
     position: relative;
@@ -191,11 +192,11 @@ h4.sistema_linfatico{
 }
 
 #main.hovered1 {
-    background-image: url(Imag/1.pagina_centrale/Limph_bg.png); 
+    background-image: url(Imag/1.pagina_centrale/Limph_bg.png);
   }
 
 /*   #main.hovered1T {
-    background-image: url(Imag/1.pagina_centrale/Limph_bg.png); 
+    background-image: url(Imag/1.pagina_centrale/Limph_bg.png);
   } */
 
   #main.hovered2 {
@@ -224,30 +225,29 @@ h4.sistema_linfatico{
 
 /* buttone Mappe Conttuali dentro i pulsanti */
 .MC_Button{
-    background: var(--mc_color1);
-    background: var(--mc_color2);
-    color: #e2e4ff81;
+    color: #ffffff;
     position: absolute;
-    bottom: 180px;
+    bottom: 160px;
     right: 20px;
     transition: 1.2s;
     border-radius: 3px;
     opacity: 0%;
     text-decoration: none;
 
-    
+
 }
 
 .MC_Button:hover{
-    color: rgb(242, 255, 248);
-    transition: 1.5s;
-    text-decoration: dashed;  
+    color: rgb(22, 200, 22);
+    transition: 0.3s;
+    text-decoration: dashed;
 }
-  
+
 
 .b_subtitle{
     margin-right: var(--subtitle_x);
     margin-top: var(--subtitle_y);
+    color: 66cc66
 }
 
 .sistema_linfatico {
@@ -255,7 +255,7 @@ h4.sistema_linfatico{
     width: var(--width_Button);
     background: var(--gradiantcolor1);
     background: var(--gradiantcolor2);
-    color: rgb(49, 87, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     border-radius: 10%;
     position: absolute;
@@ -275,7 +275,7 @@ h4.sistema_linfatico{
     width: var(--width_Button);
     background: var(--gradiantcolor1);
     background: var(--gradiantcolor2);
-    color: rgb(68, 55, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     border-radius: 10%;
     position: absolute;
@@ -293,7 +293,7 @@ h4.sistema_linfatico{
     width: var(--width_Button);
     background: var(--gradiantcolor1);
     background: var(--gradiantcolor2);
-    color: rgb(50, 81, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     border-radius: 10%;
     position: absolute;
@@ -311,7 +311,7 @@ h4.sistema_linfatico{
     width: var(--width_Button);
     background: var(--gradiantcolor1);
     background: var(--gradiantcolor2);
-    color: rgb(56, 59, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     border-radius: 10%;
     position: absolute;
@@ -329,7 +329,7 @@ h4.sistema_linfatico{
     width: var(--width_Button);
     background: var(--gradiantcolor1);
     background: var(--gradiantcolor2);
-    color: rgb(43, 75, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     border-radius: 10%;
     position: absolute;
@@ -359,12 +359,12 @@ h4.sistema_linfatico{
 .adattiva:hover,
 .malattie:hover{
     transform: scale(110%);
-    height: 230px;
+    height: 220px;
     background-color: rgb(12, 8, 255);
     background: rgb(237,255,88);
-    background: radial-gradient(circle, rgba(98, 166, 255, 0.363) 0%, rgba(73, 158, 255, 0.054) 100%);
+    background: radial-gradient(circle, rgba(11, 200, 11, 0.363) 0%, rgba(66, 200, 66, 0.054) 100%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border: solid rgb(255, 255, 255) 0.1px;
+    border: solid rgb(11, 66 ,11) 5px;
 }
 
 
@@ -375,13 +375,17 @@ h4.sistema_linfatico{
     transition: 0.3s ease;
     width: none;
     height: none;
+    margin:17.5px
   }
-  
+
   .wrapper:hover .show-on-hover {
+    transform: translate(0%, -17.5%);
       opacity: 1;
   visibility: visible;
+      transition: 0.3s ease;
   width: none;
   height: none;
+  margin:20px
   }
 
 
@@ -408,7 +412,7 @@ iframe{
 
     width: 100%;
     height: 100%;
-    border: none; 
+    border: none;
     overflow: hidden;
     scrolling : no
 }
@@ -420,8 +424,8 @@ iframe{
     margin-top: 25px;
     margin-bottom: 40px;
     margin-left: 0%;
-    
-    
+
+
 }
 
 .section_title h2 {
@@ -449,8 +453,8 @@ iframe{
     padding: 0px 100px;
     display: flex;
     align-items: center;
-    justify-content: space-around; 
-} 
+    justify-content: space-around;
+}
 
 #linf-section h2{
     font-weight: 300;
@@ -460,7 +464,7 @@ iframe{
     position: relative;
     top: -400px;
     right:0px;
-    
+
 }
 
 .linf-content{
@@ -471,7 +475,7 @@ iframe{
     color: rgb(0, 133, 133);
     position: absolute;
     top: -300px;
-    
+
 }
 
 #linf_map{
@@ -497,8 +501,8 @@ iframe{
     padding: 0px 100px;
     display: flex;
     align-items: center;
-    justify-content: space-around; 
-    } 
+    justify-content: space-around;
+    }
     .cellule-section{
         position: absolute;
     }
@@ -508,16 +512,16 @@ iframe{
         width: 600px;
         color: azure;
         position: relative;
-        top: -340px;  
+        top: -340px;
         left: 600px;
     }
-    
+
     #cellule-section p {
         width: 595px;
         color: rgb(229, 255, 0);
         position: relative;
-        top: -350px;    
-        left: 600px;  
+        top: -350px;
+        left: 600px;
     }
     #immune_map{
     height:1000px;
@@ -541,8 +545,8 @@ iframe{
         padding: 0px 100px;
         display: flex;
         align-items: center;
-        justify-content: space-around; 
-        } 
+        justify-content: space-around;
+        }
         .innata-section{
             position: absolute;
         }
@@ -552,14 +556,14 @@ iframe{
             width: 600px;
             color: azure;
             position: relative;
-            top: -360px;  
+            top: -360px;
             left: 600px;
         }
         #innata-section p {
             width: 595px;
             color: rgb(229, 255, 0);
             position: relative;
-            top: -350px;      
+            top: -350px;
         }
         #innata_map{
         height:700px;
@@ -582,8 +586,8 @@ iframe{
     padding: 0px 100px;
     display: flex;
     align-items: center;
-    justify-content: space-around; 
-    } 
+    justify-content: space-around;
+    }
     .adattiva-section{
         position: absolute;
     }
@@ -593,14 +597,14 @@ iframe{
         width: 600px;
         color: azure;
         position: relative;
-        top: -360px;  
+        top: -360px;
         left: 600px;
     }
     #adattiva-section p {
         width: 595px;
         color: rgb(229, 255, 0);
         position: relative;
-        top: -350px;      
+        top: -350px;
     }
     #adattiva_map{
     height:700px;
@@ -624,8 +628,8 @@ iframe{
     padding: 0px 100px;
     display: flex;
     align-items: center;
-    justify-content: space-around; 
-    } 
+    justify-content: space-around;
+    }
     .malattie-section{
         position: absolute;
     }
@@ -635,14 +639,14 @@ iframe{
         width: 600px;
         color: azure;
         position: relative;
-        top: -360px;  
+        top: -360px;
         left: 600px;
     }
     #malattie-section p {
         width: 595px;
         color: rgb(229, 255, 0);
         position: relative;
-        top: -350px;      
+        top: -350px;
     }
     #malattie_map{
     height:700px;

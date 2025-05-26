@@ -1,60 +1,106 @@
-html {
-  body {
-    margin: 0;
-    padding: 0;
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Immagine Interattiva Tema Scuro Verde</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #121212; /* Sfondo scuro */
+      color: #c8facc; /* Testo verde chiaro */
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .base-image {
+      display: block;
+      width: 1000px;
+    }
+
+    .overlay-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1000px;
+      height: auto;
+      pointer-events: none;
+      transition: transform 0.3s ease;
+      z-index: 2;
+    }
+
+    .hover-zone {
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 255, 0, 0.1); /* Verde traslucido */
+      z-index: 3;
+    }
+
+    .popup {
+      position: absolute;
+      background: #1e2d1e;
+      color: #c8facc;
+      padding: 10px;
+      border: 1px solid #00e676;
+      border-radius: 6px;
+      font-size: 14px;
+      line-height: 1.4;
+      width: 180px;
+      box-shadow: 0 2px 10px rgba(0, 230, 118, 0.2);
+      display: none;
+      transform: translate(+50%, -150%);
+      z-index: 4;
+    }
+
+    .cellule_map .hover-zone {
+      background-color: rgba(0, 0, 0, 0); /* Se vuoi trasparente */
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Base image -->
+  <img src="https://via.placeholder.com/1000x600.png?text=Immagine+Base" class="base-image" alt="Base Image">
+
+  <!-- Overlay image -->
+  <img src="https://via.placeholder.com/1000x600/00ff0088?text=Overlay" class="overlay-image" alt="Overlay">
+
+  <!-- Hover Zone 1 -->
+  <div class="hover-zone" style="top: 200px; left: 300px;"
+       onmouseenter="showPopup(event, 'Dettaglio A')" onmouseleave="hidePopup()">
+  </div>
+
+  <!-- Hover Zone 2 -->
+  <div class="hover-zone" style="top: 400px; left: 600px;"
+       onmouseenter="showPopup(event, 'Informazione B')" onmouseleave="hidePopup()">
+  </div>
+
+  <!-- Popup -->
+  <div class="popup" id="popup"></div>
+</div>
+
+<script>
+  const popup = document.getElementById('popup');
+
+  function showPopup(e, text) {
+    popup.textContent = text;
+    popup.style.left = e.target.style.left;
+    popup.style.top = e.target.style.top;
+    popup.style.display = 'block';
   }
 
-  .container {
-    position: relative;
-    display: inline-block;
+  function hidePopup() {
+    popup.style.display = 'none';
   }
+</script>
 
-  .base-image {
-    display: block;
-    width: 1000px; /* Adjust size as needed */
-  }
-
-  .overlay-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1000px;
-    height: auto;
-    pointer-events: none;
-    transition: transform 0.3s ease;
-    z-index: 2;
-  }
-
-  .hover-zone {
-    position: absolute;
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.1); /* Red translucent box */
-    z-index: 3;
-  }
-
-   .popup {
-     position: absolute;
-     background: #e0f7fa; /* Azzurro chiaro */
-     color: #004d60;       /* Blu scuro */
-     padding: 10px;
-     border: 1px solid #00acc1; /* Azzurro più saturo */
-     border-radius: 6px;
-     font-family: 'Segoe UI', sans-serif;
-     font-size: 14px;
-     line-height: 1.4;
-     word-wrap: break-word;
-     width: 180px;
-     box-shadow: 0 2px 10px rgba(0, 172, 193, 0.2);
-     display: none;
-     transform: translate(+50%, -150%);
-     z-index: 4;
-   }
-
-   .cellule_map .hover-zone {
-    background-color: rgba(0, 0, 0, 0); /* Red translucent box */
-   }
-
-}
+</body>
+</html>

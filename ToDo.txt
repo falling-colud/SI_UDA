@@ -1,20 +1,25 @@
-HomePage (Mam)
-    - Logo (Leo) COMPLETED
-    - Base COMPLETED
+HomePage (Mam/Leo)
+    - Logo (Leo) (COMPLETED)
+    - Base (COMPLETED)
     - fare i 5 pulsanti (COMPLETED)
     - Suddivisone pulsanti (Mappa / Sottopagina) (COMPLETED)
-    - Fade tra immagini
     - Finire le 5 sezioni (COMPLETED)
-    - Aggiunta contenuto 
+    - Aggiunta contenuto (COMPLETED)
     - Collegare le mappe (COMPLETED)
     - Cambiare lo sfondo e organizzare le sezioni 
-    - Rendere  i text più carini ( h2 )
+    - Rendere  i text più carini ( h2 ) (COMPLETED)
     - Gestire i colori (COMPLETED)
+    - Fade tra immagini --------------------------------------
+    - Backgorund change --------------------------------------
+    - Pulsanti hover fix (COMPLETED)
+    - Main page style change (COMPLETED)
+    - Theme Swap Cells
+    - fix image bug
 
-Mappe (Leo)
+Mappe (Leo) --------------------------------------
     - Template COMPLETED
-    - Linfatico
-    - Cellule
+    - Linfatico (COMPLETED)
+    - Cellule (COMPLETED)
     - Immunità adattiva
     - Immunità innata
     - Malattie e Vaccini
@@ -23,14 +28,17 @@ Sottopagine (Leo)
     - Template COMPLETED
     - Base COMPLETED
     - Indice COMPLETED
-    - Tendina
-    - Collegamenti
+    - Tendina (COMPLETED)
 
-Contenuto Sottopagine (Mati / Monte)
+    - Collegamenti mappe --------------------------------------
+
+Contenuto Sottopagine (Leo / Monte)
     - Suddivisione COMPLETED
+    - Linfatico (COMPLETED)
+    - Cellule (COMPLETED)
+    - Immunità adattiva (COMPLETED)
+    - Immunità innata (COMPLETED)
+    - Malattie e Vaccini (COMPLETED)-
 
-    - Linfatico
-    - Cellule
-    - Immunità adattiva
-    - Immunità innata
-    - Malattie e Vaccini
+    - Aggiungi mappe
+    - Add images --------------------------------------
