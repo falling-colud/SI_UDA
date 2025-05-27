@@ -42,8 +42,7 @@
 
 <section id="indice" class="indice">
     <h2>Indice</h2>
-    <ul>
-        <li onclick="scrollToSection('Difese esterne')">Difese Esterne</li>
+    <ul style = "padding-left:40px">        <li onclick="scrollToSection('Difese esterne')">Difese Esterne</li>
         <li onclick="scrollToSection('Difese interne')">Difese Interne</li>
         <li onclick="scrollToSection('Reazione infiammatoria')">Reazione infiammatoria</li>
 
@@ -103,6 +102,31 @@
         section.scrollIntoView({ behavior: 'smooth' });
       }
     }
+
+    // Valid section IDs based on <option> values
+    const validSectionIds = Array.from(
+      document.querySelectorAll("select option")
+    ).map(opt => opt.value);
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5
+    };
+
+    const sections = document.querySelectorAll("section");
+    const select = document.querySelector("select");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && validSectionIds.includes(entry.target.id)) {
+          select.value = entry.target.id;
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(section => observer.observe(section));
 </script>
+
 </body>
 </html>

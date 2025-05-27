@@ -36,7 +36,7 @@
 
 <section id="Intro">
     <h2>Introduzione</h2>
-    <p>
+    <p class="content-section">
         Il sistema immunitario è composto da una vasta rete di cellule e molecole che lavorano insieme per proteggere l'organismo da agenti patogeni come batteri, virus, funghi e parassiti. Ogni tipo cellulare ha un ruolo specifico nel riconoscimento, risposta e memoria immunitaria. Questa pagina esplora le principali cellule immunitarie coinvolte nella difesa dell'organismo.
     </p>
 </section>
@@ -44,8 +44,7 @@
 <!-- Nuova sezione Indice -->
 <section id="indice" class="indice">
     <h2>Indice</h2>
-    <ul>
-        <li onclick="scrollToSection('CelluleB')">Cellule B</li>
+    <ul style = "padding-left:40px">        <li onclick="scrollToSection('CelluleB')">Cellule B</li>
         <li onclick="scrollToSection('CelluleT')">Cellule T</li>
         <li onclick="scrollToSection('Macrofagi')">Macrofagi</li>
         <li onclick="scrollToSection('Fibroblasti')">Fibroblasti</li>
@@ -59,7 +58,7 @@
 
 <section id="CelluleB">
     <h2>Cellule B</h2>
-    <div class="section-content">
+    <div class="content-section">
         <div>
             <p>
                 Le cellule B sono linfociti coinvolti nella risposta immunitaria umorale. Riconoscono antigeni specifici attraverso recettori di membrana e, una volta attivate, si differenziano in plasmacellule che producono anticorpi.
@@ -76,7 +75,7 @@
 
 <section id="CelluleT">
     <h2>Cellule T</h2>
-    <div class="section-content">
+    <div class="content-section">
         <div>
             <p>
                 I linfociti T svolgono un ruolo centrale nella risposta immunitaria cellulare. Maturano nel timo e si suddividono in diverse classi con funzioni distinte.
@@ -93,7 +92,7 @@
 
 <section id="Macrofagi">
     <h2>Macrofagi</h2>
-    <div class="section-content">
+    <div class="content-section">
         <div>
             <p>
                 I macrofagi derivano dai monociti e sono cellule fagocitarie specializzate nella rimozione di patogeni, cellule morte e detriti cellulari. Sono attivi nella fase cronica dell'infiammazione.
@@ -110,7 +109,7 @@
 
 <section id="Fibroblasti">
     <h2>Fibroblasti</h2>
-    <div class="section-content">
+    <div class="content-section">
         <div>
             <p>
                 I fibroblasti sono cellule non immunitarie del tessuto connettivo, fondamentali per la produzione della matrice extracellulare. Svolgono un ruolo indiretto nella modulazione immunitaria.
@@ -127,7 +126,7 @@
 
 <section id="Dendritiche">
     <h2>Cellule Dendritiche</h2>
-    <div class="section-content">
+    <div class="content-section">
         <div>
             <p>
                 Le cellule dendritiche sono le principali cellule presentatrici di antigeni. Riconoscono i patogeni, li fagocitano e migrano verso i linfonodi per attivare i linfociti T.
@@ -144,7 +143,7 @@
 
 <section id="Eosinofili">
     <h2>Eosinofili</h2>
-    <div class="section-content">
+    <div class="content-section">
         <div>
             <p>
                 Gli eosinofili sono granulociti coinvolti nella difesa contro parassiti e nelle reazioni allergiche. Contengono granuli che rilasciano sostanze tossiche per i patogeni.
@@ -161,7 +160,7 @@
 
 <section id="Basofili">
     <h2>Basofili</h2>
-    <div class="section-content">
+    <div class="content-section">
         <div>
             <p>
                 I basofili sono i meno comuni tra i granulociti, ma essenziali nelle risposte allergiche. Contengono granuli ricchi di istamina ed eparina.
@@ -178,7 +177,7 @@
 
 <section id="Neutrofili">
     <h2>Neutrofili</h2>
-    <div class="section-content">
+    <div class="content-section">
         <div>
             <p>
                 I neutrofili sono i granulociti più abbondanti nel sangue. Sono i primi a intervenire durante le infezioni acute, eliminando patogeni per fagocitosi.
@@ -195,7 +194,7 @@
 
 <section id="NaturalKiller">
     <h2>Cellule Natural Killer</h2>
-    <div class="section-content">
+    <div class="content-section">
         <div>
             <p>
                 Le cellule NK fanno parte dell’immunità innata. Sono in grado di uccidere cellule infettate da virus o trasformate in cellule tumorali senza bisogno di sensibilizzazione antigenica.
@@ -212,11 +211,36 @@
 
 <script>
     function scrollToSection(id) {
-        const section = document.getElementById(id);
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
     }
+
+    // Valid section IDs based on <option> values
+    const validSectionIds = Array.from(
+      document.querySelectorAll("select option")
+    ).map(opt => opt.value);
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5
+    };
+
+    const sections = document.querySelectorAll("section");
+    const select = document.querySelector("select");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && validSectionIds.includes(entry.target.id)) {
+          select.value = entry.target.id;
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(section => observer.observe(section));
 </script>
+
 </body>
 </html>

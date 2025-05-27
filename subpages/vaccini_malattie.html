@@ -6,15 +6,15 @@
     <title>Vaccini e Malattie del Sistema Linfatico</title>
     <link rel="stylesheet" href="subpages.css" />
     <style>
-        .section-content {
+        .content-section {
             display: flex;
             gap: 20px;
             align-items: flex-start;
         }
-        .section-content p {
+        .content-section p {
             flex: 1;
         }
-        .section-content img {
+        .content-section img {
             max-width: 300px;
             height: auto;
             order: 2;
@@ -49,13 +49,12 @@
 
 <section id="intro">
     <h2>Introduzione</h2>
-    <p>Il sistema linfatico è essenziale per il funzionamento del sistema immunitario e per il mantenimento dell’equilibrio dei fluidi corporei. Diverse malattie possono colpire questo sistema, compromettendo la sua funzione e la salute generale. I vaccini rappresentano uno strumento chiave per prevenire malattie infettive e supportare la risposta immunitaria.</p>
+    <p class = "content-section">Il sistema linfatico è essenziale per il funzionamento del sistema immunitario e per il mantenimento dell’equilibrio dei fluidi corporei. Diverse malattie possono colpire questo sistema, compromettendo la sua funzione e la salute generale. I vaccini rappresentano uno strumento chiave per prevenire malattie infettive e supportare la risposta immunitaria.</p>
 </section>
 
 <section id="indice" class="indice">
     <h2>Indice</h2>
-    <ul>
-        <li onclick="scrollToSection('intro')">Introduzione</li>
+    <ul style = "padding-left:40px">        <li onclick="scrollToSection('intro')">Introduzione</li>
         <li onclick="scrollToSection('malattie-linfatico')">Malattie del Sistema Linfatico</li>
         <li onclick="scrollToSection('linfomi')">Linfomi</li>
         <li onclick="scrollToSection('linfedema')">Linfedema</li>
@@ -66,7 +65,7 @@
 
 <section id="malattie-linfatico">
     <h2>Malattie del Sistema Linfatico</h2>
-    <div class="section-content">
+    <div class="content-section">
         <p>Il sistema linfatico può essere colpito da diverse patologie che ne alterano il funzionamento. Tra queste ci sono infezioni, tumori e disturbi legati al drenaggio linfatico. Il sistema linfatico è inoltre coinvolto in molte malattie autoimmuni e condizioni infiammatorie.</p>
         <img src="../img/malattie_sistema_linfatico.png" alt="Malattie del sistema linfatico" />
     </div>
@@ -74,7 +73,7 @@
 
 <section id="linfomi">
     <h2>Linfomi</h2>
-    <div class="section-content">
+    <div class="content-section">
         <p>I linfomi sono tumori maligni che originano dai linfociti, cellule fondamentali del sistema immunitario presenti nei linfonodi e in altri tessuti linfatici. Si dividono principalmente in linfoma di Hodgkin e linfomi non-Hodgkin. Queste neoplasie compromettono la capacità del sistema linfatico di combattere infezioni e possono causare gonfiore dei linfonodi, febbre e perdita di peso.</p>
         <img src="../img/linfoma.png" alt="Linfoma" />
     </div>
@@ -82,7 +81,7 @@
 
 <section id="linfedema">
     <h2>Linfedema</h2>
-    <div class="section-content">
+    <div class="content-section">
         <p>Il linfedema è una condizione caratterizzata da un accumulo anomalo di linfa nei tessuti, spesso causato da un’ostruzione o danneggiamento dei vasi linfatici. Può essere primario (congenito) o secondario, ad esempio dopo interventi chirurgici o radioterapie. Il linfedema provoca gonfiore, dolore e può aumentare il rischio di infezioni.</p>
         <img src="../img/linfedema.png" alt="Linfedema" />
     </div>
@@ -90,7 +89,7 @@
 
 <section id="vaccini">
     <h2>Tipi di Vaccini</h2>
-    <div class="section-content">
+    <div class="content-section">
         <p>I vaccini si classificano in diverse categorie, ognuna con un meccanismo specifico per stimolare il sistema immunitario:</p>
         <ul>
             <li><strong>Vaccini a virus/batteri attenuati:</strong> contengono patogeni vivi ma indeboliti, capaci di attivare una risposta immunitaria robusta.</li>
@@ -105,7 +104,7 @@
 
 <section id="funzionamento-vaccini">
     <h2>Come Funzionano i Vaccini</h2>
-    <div class="section-content">
+    <div class="content-section">
         <p>I vaccini simulano un’infezione, attivando il sistema immunitario senza causare malattia. Questo processo stimola la produzione di anticorpi e la formazione di cellule della memoria immunitaria, che permettono una risposta più rapida ed efficace in caso di incontro reale con il patogeno. La memoria immunitaria è fondamentale per la prevenzione a lungo termine delle infezioni.</p>
         <img src="../img/funzionamento_vaccini.png" alt="Funzionamento dei vaccini" />
     </div>
@@ -113,11 +112,36 @@
 
 <script>
     function scrollToSection(id) {
-        const section = document.getElementById(id);
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
     }
+
+    // Valid section IDs based on <option> values
+    const validSectionIds = Array.from(
+      document.querySelectorAll("select option")
+    ).map(opt => opt.value);
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5
+    };
+
+    const sections = document.querySelectorAll("section");
+    const select = document.querySelector("select");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && validSectionIds.includes(entry.target.id)) {
+          select.value = entry.target.id;
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(section => observer.observe(section));
 </script>
+
 </body>
 </html>
