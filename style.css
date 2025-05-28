@@ -447,7 +447,7 @@ iframe{
     /* background-image: url(Imag/1.pagina_centrale/TEXt/S_Linfatico.png); */
     /* background-image: url(Imag/1.pagina_centrale/linf-section/ling-section-bg.png); */
     /* background-image: url(Imag/1.pagina_centrale/linf-section/sectionbackground.jpg); */
-    background-image: url(Imag/1.pagina_centrale/TEXt/S_Linfatico.BGG.png);
+    background-image: url(linfatico.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0px 100px;
@@ -495,7 +495,7 @@ iframe{
  #cellule-section{
     width: 100%;
     height: 100vh;
-    background-image: url(Imag/1.pagina_centrale/TEXt/S_cellule.png);
+    background-image: url(le_cellule.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0px 100px;
@@ -539,7 +539,7 @@ iframe{
     #innata-section{
         width: 100%;
         height: 100vh;
-        background-image: url(Imag/1.pagina_centrale/TEXt/S_innata.png);
+        background-image: url(imm_inn.png);
         background-repeat: no-repeat;
         background-size: cover;
         padding: 0px 100px;
@@ -580,7 +580,7 @@ iframe{
 #adattiva-section{
     width: 100%;
     height: 100vh;
-    background-image: url(Imag/1.pagina_centrale/TEXt/S_Adattiva.png);
+    background-image: url(imm_ada.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0px 100px;
@@ -622,7 +622,7 @@ iframe{
 #malattie-section{
     width: 100%;
     height: 100vh;
-    background-image: url(Imag/1.pagina_centrale/TEXt/S_Vaccini.png);
+    background-image: url(vacc_mala.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0px 100px;
@@ -661,3 +661,9 @@ iframe{
 /*  End - Sezioni Della pagina Centrale  */
 
 /* ------------------------------------------------------------------------------------------------- */
+.section-transition:nth-of-type(odd) {
+    background: linear-gradient(to bottom, #0f3d2e, #d4f1e5);
+}
+.section-transition:nth-of-type(even) {
+    background: linear-gradient(to bottom, #d4f1e5, #ffffff);
+}

@@ -59,6 +59,7 @@ header img {
   cursor: pointer;
   border-radius: 8px;
   object-fit: contain;
+  background-color: #d4edda; /* light green */
 }
 
 nav button {
@@ -148,11 +149,12 @@ section,
 }
 
 img {
-  border: 5px solid #264d26;
+  border: 5px solid #3d6f3d;
   border-radius: 5px;
   max-width: 100%;
   height: auto;
   display: block;
+  background-color: #264d26
 }
 
 p {
@@ -161,12 +163,13 @@ p {
 }
 
 .content-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   padding: 40px;
   gap: 40px;
-  flex-wrap: wrap;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 20px;
 }
 
 .content-section img {
@@ -184,15 +187,8 @@ section {
     margin-bottom: 50px;
 }
 
-.section-content {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 40px;
-    margin-top: 20px;
-}
 
-.section-content img {
+.content-section img {
     max-width: 400px;
     height: auto;
 }

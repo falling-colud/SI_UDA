@@ -34,7 +34,7 @@
 
 <section id="intro">
     <h2>Introduzione</h2>
-    <div class="section-content">
+    <div class="content-section">
         <p>L'immunità adattiva, anche detta specifica o acquisita, è un sistema complesso che entra in azione dopo l’immunità innata. Si sviluppa nel tempo e offre una protezione mirata contro agenti patogeni specifici.</p>
         <img src="adattiva/schemaadttiva.jpg" alt="Schema dell'immunità adattiva" class="image-section" />
     </div>
@@ -42,8 +42,7 @@
 
 <section id="indice" class="indice">
     <h2>Indice</h2>
-    <ul>
-        <li onclick="scrollToSection('intro')">Introduzione</li>
+    <ul style = "padding-left:40px">        <li onclick="scrollToSection('intro')">Introduzione</li>
         <li onclick="scrollToSection('caratteristiche')">Caratteristiche</li>
         <li onclick="scrollToSection('attivazione')">Meccanismo di Attivazione</li>
         <li onclick="scrollToSection('linfociti')">Linfociti T e B</li>
@@ -67,7 +66,7 @@
 
 <section id="linfociti">
     <h2>Linfociti T e B</h2>
-    <div class="section-content">
+    <div class="content-section">
         <p>I <strong>linfociti T</strong> maturano nel timo e si suddividono in T helper (CD4+) e T citotossici (CD8+), con ruoli chiave nell'attivazione di altre cellule o nell'uccisione di cellule infette. I <strong>linfociti B</strong> maturano nel midollo osseo e producono anticorpi specifici contro gli antigeni riconosciuti.</p>
         <img src="adattiva/schema b e t.jpg" alt="Rappresentazione dei linfociti T e B" class="image-section" />
     </div>
@@ -75,7 +74,7 @@
 
 <section id="umorale">
     <h2>Risposta Umorale</h2>
-    <div class="section-content">
+    <div class="content-section">
         <p>Questa risposta coinvolge i linfociti B e la produzione di anticorpi (immunoglobuline). Gli anticorpi neutralizzano i patogeni, facilitano la loro fagocitosi e attivano il complemento. È fondamentale contro batteri extracellulari e tossine.</p>
         <img src="adattiva/anticorpi.gif" alt="Produzione di anticorpi nella risposta umorale" class="image-section" />
     </div>
@@ -83,7 +82,7 @@
 
 <section id="memoria">
     <h2>Memoria Immunitaria</h2>
-    <div class="section-content">
+    <div class="content-section">
         <p>Dopo l'esposizione iniziale a un antigene, una parte dei linfociti attivati si differenzia in cellule della memoria. Queste cellule permettono una risposta più rapida e potente se l’antigene viene incontrato nuovamente, proteggendo il corpo a lungo termine.</p>
         <img src="adattiva/memoria.jpg" alt="Funzione dei linfociti della memoria" class="image-section" />
     </div>
@@ -91,12 +90,11 @@
 
 <section id="clinica">
     <h2>Importanza Clinica</h2>
-    <div class="section-content">
+    <div class="content-section">
         <p>L’immunità adattiva è alla base della vaccinazione, che induce memoria immunitaria senza causare la malattia. È anche coinvolta nei trapianti, nelle malattie autoimmuni e nell’immunoterapia dei tumori. Comprendere la sua funzione è essenziale per trattare molte condizioni mediche moderne.</p>
         <img src="adattiva/vaccini.jpg" alt="Vaccinazione e immunoterapia" class="image-section" />
     </div>
 </section>
-
 <script>
     function scrollToSection(id) {
       const section = document.getElementById(id);
@@ -104,6 +102,31 @@
         section.scrollIntoView({ behavior: 'smooth' });
       }
     }
+
+    // Valid section IDs based on <option> values
+    const validSectionIds = Array.from(
+      document.querySelectorAll("select option")
+    ).map(opt => opt.value);
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5
+    };
+
+    const sections = document.querySelectorAll("section");
+    const select = document.querySelector("select");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && validSectionIds.includes(entry.target.id)) {
+          select.value = entry.target.id;
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(section => observer.observe(section));
 </script>
+
 </body>
 </html>
